@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Bahromjon kelllldiii xexe</h1>
+<h1>Bahromjon kelllldiii endi yoradi</h1>
 <p>Uni Diyorbek olib keldio xexexe</p>
 </body>
 </html>
