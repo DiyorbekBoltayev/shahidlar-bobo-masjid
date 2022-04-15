@@ -9,7 +9,8 @@
 </head>
 <body>
 <h1>Bahromjon kelllldiii xexe</h1>
-<p>Uni Diyorbek olib keldio xexexe</p>
+<p>Uni Diyorbek olib keldi xexexe</p>
 <p>Fayzulla ham galdi</p>
+<p>Bu yerda Ozodbek keldi dayan yozuv bo'ladi 	😂</p>
 </body>
 </html>
