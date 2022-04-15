@@ -1,8 +1,7 @@
 @extends('user.master')
 @section('content')
 
-{{'/
-<section class="engine"><'}}a href="https://mobirise.info">Mobirise</a></section><section class="content6 cid-t2U8rTt4AM" id="content6-1f">
+<section class="engine"><a href="https://mobirise.info">Mobirise</a></section><section class="content6 cid-t2U8rTt4AM" id="content6-1f">
 
     <div class="container">
         <div class="row justify-content-center">
