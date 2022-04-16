@@ -10,6 +10,17 @@ class HomeController extends Controller
     {
         return view('user.index');
     }
+    public function adminmi(){
+        return view('user.adminmi');
+    }
+    public function adminakanmi(Request $request){
+        if ($request->login=="admin1" && $request->parol=="1234"){
+            return redirect(route('admin'));
+        }
+        else{
+            return redirect(route('adminmi'));
+        }
+    }
 
     public function ehson()
     {

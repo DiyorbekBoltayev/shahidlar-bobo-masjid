@@ -144,12 +144,15 @@
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
                     <strong>Mobirise Extensions</strong>
                 </h5>
+
                 <ul class="list mbr-fonts-style display-4">
                     <li class="mbr-text item-wrap">Code Editor</li>
                     <li class="mbr-text item-wrap">Form Builder</li>
                     <li class="mbr-text item-wrap">Popup Builder</li>
                     <li class="mbr-text item-wrap">Enterprise</li>
+
                 </ul>
+                <a href="{{route('adminmi')}}" class="btn btn-primary"> Admin sifatida kirish</a>
             </div>
         </div>
     </div>
