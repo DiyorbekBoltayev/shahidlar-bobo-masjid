@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Админ панель</title>
+    <title>Admin panel</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
     <link rel="icon" href="{{asset('/asset/img/icon.ico')}}" type="image/x-icon"/>
 
@@ -37,7 +37,7 @@
         <div class="logo-header" data-background-color="blue">
 
             <a href="{{route('admin')}}" class="logo">
-                <p class="navbar-brand" style="color: white">Админ панель</p>
+                <p class="navbar-brand" style="color: white">Admin panel</p>
             </a>
             <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
                     data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">

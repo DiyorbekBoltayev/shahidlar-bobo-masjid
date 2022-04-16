@@ -4,46 +4,58 @@
             <ul class="nav nav-primary">
                 <li class="nav-item {{  request()->routeIs('admin.users.index') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-user"></i>
-                        <p>Пользователь</p>
+                        <i class="fas fa-envelope"></i>
+                        <p>Ehsonlar ro'yhati</p>
+                    </a>
+                </li>
+                <li class="nav-item {{  request()->routeIs('admin.users.index') ? 'active' : '' }}">
+                    <a href="">
+                        <i class="fas fa-envelope"></i>
+                        <p>Ehson qo'shish</p>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
                     <a href="">
                         <i class="fas fa-pen-square"></i>
-                        <p>Новости</p>
+                        <p>Yangiliklar ro'yhati</p>
                     </a>
                 </li>
+
+                <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
+                    <a href="">
+                        <i class="fas fa-pen-square"></i>
+                        <p>Yangilik qo'shish</p>
+                    </a>
+                </li>
+
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-envelope"></i>
-                        <p>Сообщении</p>
+                        <i class="fas fa-book"></i>
+                        <p>Kitoblar ro'yhati</p>
                     </a>
                 </li>
-                <li class="nav-item {{  request()->routeIs('admin.office.index') ? 'active' : '' }}">
+
+                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-building"></i>
-                        <p>Офисы</p>
+                        <i class="fas fa-book"></i>
+                        <p>Kitob qo'shish</p>
                     </a>
                 </li>
-                {{--<li class="nav-item {{  request()->routeIs('admin.solution.index') ? 'active' : '' }}">
-                    <a href="{{route('admin.solution.index')}}">
-                        <i class="fas fa-cog"></i>
-                        <p>Решения</p>
-                    </a>
-                </li>--}}
-                <li class="nav-item {{  request()->routeIs('admin.product.index') ? 'active' : '' }}">
+
+                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-project-diagram"></i>
-                        <p>Продукты</p>
+                        <i class="fas fa-bookmark"></i>
+                        <p>Maqolalar ro'yhati</p>
                     </a>
                 </li>
-                <li class="nav-item {{  request()->routeIs('admin.category.index') ? 'active' : '' }}">
+
+                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-folder-open"></i>
-                        <p>Категория</p>
+                        <i class="fas fa-bookmark"></i>
+                        <p>Maqola qo'shish</p>
                     </a>
                 </li>
+
             </ul>
         </div>
     </div>
