@@ -114,6 +114,13 @@
 
 <!-- Atlantis JS -->
 <script src="{{asset('/asset/js/atlantis.min.js')}}"></script>
+
+<script>
+    function yashir(){
+        document.getElementById("yashirish").style.visibility = 'hidden';
+    }
+</script>
+
 @yield('script')
 </body>
 </html>

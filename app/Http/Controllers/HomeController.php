@@ -34,12 +34,6 @@ class HomeController extends Controller
         return view('user.yangiliklar',compact('data',$data));
     }
 
-    public function maqola()
-    {
-        return view('user.maqola');
-    }
-
-
     public function kitoblar()
     {
         return view('user.kitoblar');

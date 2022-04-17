@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('maqolas', function (Blueprint $table) {
             $table->id();
+            $table->string('mavzu')->nullable();
+            $table->text('matn')->nullable();
+            $table->string('rasm')->nullable();
+            $table->string('autor')->nullable();
             $table->timestamps();
         });
     }

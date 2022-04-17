@@ -48,7 +48,7 @@ class FayzullaController extends Controller
     public function store()
     {
         $data=Yangilik::all();
-        return view('admin.yangiliklar.shownews',compact('data',$data));
+        return view('admin.yangiliklar.shownews',compact('data'));
     }
 
     /**
@@ -95,7 +95,7 @@ class FayzullaController extends Controller
         }
         $data->save();
         $data=Yangilik::all();
-        return view('admin.yangiliklar.shownews',compact('data',$data));
+        return view('admin.yangiliklar.shownews',compact('data'));
 
     }
 
