@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('yangiliks', function (Blueprint $table) {
             $table->id();
+            $table->string('mavzu');
+            $table->text('matn');
+            $table->string('rasm');
             $table->timestamps();
         });
     }
