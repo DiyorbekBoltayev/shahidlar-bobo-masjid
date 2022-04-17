@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Yangilik;
 
 class HomeController extends Controller
 {
@@ -29,7 +30,7 @@ class HomeController extends Controller
 
     public function yangiliklar()
     {
-
+        $data=Yangilik::all();
         return view('user.yangiliklar');
     }
 
