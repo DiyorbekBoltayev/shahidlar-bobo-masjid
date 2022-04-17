@@ -4,17 +4,13 @@
 
 
     <section class="engine"><a href="https://mobirise.info/d">site maker</a></section><section class="features15 cid-t2UjhZRBWo" id="features16-21">
-
-
-
-
         <div class="container">
             <div class="content-wrapper">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg">
                         <div class="text-wrapper">
                             <h6 class="card-title mbr-fonts-style display-2">
-                                <strong>Amazing blocks</strong>
+                                <strong>Amazing</strong>
                             </h6>
                             <p class="mbr-text mbr-fonts-style mb-4 display-4">
                                 Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.</p>

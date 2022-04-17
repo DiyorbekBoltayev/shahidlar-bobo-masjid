@@ -31,7 +31,7 @@ class HomeController extends Controller
     public function yangiliklar()
     {
         $data=Yangilik::all();
-        return view('user.yangiliklar');
+        return view('user.yangiliklar',compact('data',$data));
     }
 
     public function maqola()
