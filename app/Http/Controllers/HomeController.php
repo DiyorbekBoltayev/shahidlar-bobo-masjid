@@ -29,6 +29,7 @@ class HomeController extends Controller
 
     public function yangiliklar()
     {
+
         return view('user.yangiliklar');
     }
 

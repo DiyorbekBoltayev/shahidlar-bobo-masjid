@@ -24,3 +24,10 @@ Route::get('/adm',[HomeController::class,'adminmi'])->name('adminmi');
 Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 Route::get('/admin',[AdminController::class,'index'])->name('admin');
+Route::get('/addnews',[App\Http\Controllers\FayzullaController::class,'addnews'])->name('addnews');
+
+Route::post('/sendnews',[App\Http\Controllers\FayzullaController::class,'create'])->name('create');
+Route::get('/shownews',[App\Http\Controllers\FayzullaController::class,'store'])->name('shownews');
+Route::get('/edit/{id}',[App\Http\Controllers\FayzullaController::class,'show']);
+Route::post('/update/{id}',[App\Http\Controllers\FayzullaController::class,'update']);
+Route::get('/delete/{id}',[App\Http\Controllers\FayzullaController::class,'destroy']);

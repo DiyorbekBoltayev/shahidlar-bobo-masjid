@@ -15,14 +15,14 @@
                     </a>
                 </li>
                 <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
-                    <a href="">
+                    <a href="{{route('shownews')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Yangiliklar ro'yhati</p>
                     </a>
                 </li>
 
                 <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
-                    <a href="">
+                    <a href="{{route('addnews')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Yangilik qo'shish</p>
                     </a>
