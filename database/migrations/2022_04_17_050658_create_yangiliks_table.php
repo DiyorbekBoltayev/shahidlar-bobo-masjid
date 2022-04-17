@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('mavzu');
             $table->text('matn');
-            $table->string('rasm')->nullable();;
+            $table->string('rasm');
             $table->timestamps();
         });
     }

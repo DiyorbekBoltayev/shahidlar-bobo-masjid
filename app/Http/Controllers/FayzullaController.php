@@ -87,10 +87,12 @@ class FayzullaController extends Controller
         $data = Yangilik::find($id);
         $data->mavzu=$request->mavzu;
         $data->matn=$request->matn;
-        $image=$request->rasm;
-        $imagename=time().'.'.$image->getClientOriginalExtension();
-        $request->rasm->move('newsimage',$imagename);
-        $data->rasm=$imagename;
+        if($request->rasm !=null){
+            $image=$request->rasm;
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+            $request->rasm->move('newsimage',$imagename);
+            $data->rasm=$imagename;
+        }
         $data->save();
         $data=Yangilik::all();
         return view('admin.yangiliklar.shownews',compact('data',$data));
