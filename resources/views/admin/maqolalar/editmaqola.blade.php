@@ -17,7 +17,7 @@
             @endif
 
 
-            <form action="{{url('updatemaqola', $data->id )}}" method="post" enctype="multipart/form-data">
+            <form action="{{url("updatemaqola/$data->id")}}" method="post" enctype="multipart/form-data">
                 @csrf
 
                 <h1 class="title"> Maqolani Yangilash </h1>

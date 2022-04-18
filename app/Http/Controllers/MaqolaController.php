@@ -72,7 +72,7 @@ class MaqolaController extends Controller
             $data->rasm=$rasmname;
         }
         $data->save();
-        return view('admin.maqolalar.editmaqola')->with('xabar','Malumot muoffaqiyatli yangilandi!..');
+        return redirect(route('maqolalar'))->with('xabar','Malumot muoffaqiyatli yangilandi!..');
 
     }
 

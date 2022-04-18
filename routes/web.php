@@ -25,7 +25,7 @@ Route::get('/adm',[HomeController::class,'adminmi'])->name('adminmi');
 Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 
-Route::get('/maqolalar',[MaqolaController::class, 'index']);
+Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar');
 
 Route::get('/addmaqola',[MaqolaController::class, 'show']);
 Route::post('/uploadmaqola',[MaqolaController::class, 'create']);
