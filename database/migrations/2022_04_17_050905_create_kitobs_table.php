@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('kitobs', function (Blueprint $table) {
             $table->id();
+            $table->string('nomi');
+            $table->string('avtor');
+            $table->string('rasm');
+            $table->string('file');
             $table->timestamps();
         });
     }

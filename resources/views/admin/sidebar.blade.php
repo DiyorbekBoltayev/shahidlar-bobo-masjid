@@ -29,14 +29,14 @@
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
-                    <a href="">
+                    <a href="{{url('showbook')}}">
                         <i class="fas fa-book"></i>
                         <p>Kitoblar ro'yhati</p>
                     </a>
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
-                    <a href="">
+                    <a href="{{url('addbook')}}">
                         <i class="fas fa-book"></i>
                         <p>Kitob qo'shish</p>
                     </a>

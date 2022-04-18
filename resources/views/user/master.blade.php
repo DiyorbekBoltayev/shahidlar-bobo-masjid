@@ -61,10 +61,10 @@
                     <a class="iconfont-wrapper" href="https://fecebook.com" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://t.me/ozodbek_ozodov1" target="_blank">
+                    <a class="iconfont-wrapper" href="" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-telegram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://instagram.com/ozodbek_ozodov1" target="_blank">
+                    <a class="iconfont-wrapper" href="" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
 
