@@ -80,7 +80,7 @@ class MaqolaController extends Controller
     public function destroy($id)
     {
         $data = Maqola::find($id);
-        $data->dalete();
+        $data->delete();
 
         return view('admin.maqolalar.editmaqola')->with('xabar','Malumot muoffaqiyatli yangilandi!..');
 

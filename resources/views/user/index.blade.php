@@ -14,39 +14,8 @@
                     <p class="mbr-text mbr-fonts-style display-7">Alloh taolo marhamat qiladi: “...va siz ehson qiling, Alloh taolo ehson qiluvchilarni yaxshi ko‘radi”. Yana bir oyatda: “Yaxshilik qiluvchilarga bu dunyoning o‘zida ham yaxshilik bor”, deyiladi.</p>
                     <div class="mbr-section-btn mt-3"><a class="btn btn-info display-4" href="page3.html#contacts2-1s">Ehson qilish</a></div>
                 </div>
-                <div class="col-6 col-lg-4"></div>
-                <div class="col-6 col-lg-3" style="background: #15a879">
-
-                    <table class="table text-white">
-                        <h2 class="text-white text text-center">Taqvim</h2>
-                        <tr>
-                            <th>Bomdod</th>
-                            <th>04:57</th>
-                        </tr>
-                        <tr>
-                            <th>Quyosh</th>
-                            <th>06:18</th>
-                        </tr>
-                        <tr>
-                            <th>Peshin</th>
-                            <th>12:58</th>
-                        </tr>
-                        <tr>
-                            <th>Asr</th>
-                            <th>17:41</th>
-                        </tr>
-                        <tr>
-                            <th>Shom</th>
-                            <th>19:38</th>
-                        </tr>
-                        <tr>
-                            <th>Xufton</th>
-                            <th>21:01</th>
-                        </tr>
-
-                    </table>
-                </div>
-
+                <div class="col-6 col-lg-3"></div>
+                @include('user.namoz_vaqti')
             </div>
         </div>
     </section>
