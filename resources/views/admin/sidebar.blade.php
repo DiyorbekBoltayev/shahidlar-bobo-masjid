@@ -2,14 +2,14 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <ul class="nav nav-primary">
-                <li class="nav-item {{  request()->routeIs('admin.users.index') ? 'active' : '' }}">
-                    <a href="">
+                <li class="nav-item {{  request()->routeIs('ehsonlar') ? 'active' : '' }}">
+                    <a href="{{route('ehsonlar')}}">
                         <i class="fas fa-envelope"></i>
                         <p>Ehsonlar ro'yhati</p>
                     </a>
                 </li>
-                <li class="nav-item {{  request()->routeIs('admin.users.index') ? 'active' : '' }}">
-                    <a href="">
+                <li class="nav-item {{  request()->routeIs('addehson') ? 'active' : '' }}">
+                    <a href="{{route('addehson')}}">
                         <i class="fas fa-envelope"></i>
                         <p>Ehson qo'shish</p>
                     </a>
