@@ -24,7 +24,7 @@
                     <label for="exampleInputPassword1" class="form-label">Rasmni tanlang</label>
                     <input type="file" name="rasm" class="form-control text-black" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Yangilash</button>
         </form>
     </div>
 

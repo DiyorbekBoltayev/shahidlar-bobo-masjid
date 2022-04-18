@@ -75,13 +75,7 @@
     </nav>
 </section>
 
-
-
-
 @yield('content')
-
-
-
 
 
 <section class="footer4 cid-t2SUykaqip" once="footers" id="footer4-m">
