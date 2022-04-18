@@ -50,12 +50,12 @@ Route::get('/edit/{id}',[App\Http\Controllers\FayzullaController::class,'show'])
 Route::post('/update/{id}',[App\Http\Controllers\FayzullaController::class,'update']);
 Route::get('/delete/{id}',[App\Http\Controllers\FayzullaController::class,'destroy']);
 
-<<<<<<<<< Temporary merge branch 1
+
 Route::get('/yangiliksingle/{id}',[App\Http\Controllers\FayzullaController::class,'single']);
-=========
+
 //diyorbek's route start
 Route::get('/ehsonlar',[EhsonController::class,'ehsonlar'])->name('ehsonlar');
 Route::get('/addehson',[EhsonController::class,'addehson'])->name('addehson');
 Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehson');
 //diyorbek's route  end
->>>>>>>>> Temporary merge branch 2
+
