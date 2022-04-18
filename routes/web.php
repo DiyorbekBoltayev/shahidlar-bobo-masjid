@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use \App\Http\Controllers\AdminController;
 use App\Http\Controllers\MaqolaController;
+use App\Http\Controllers\EhsonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,10 +29,10 @@ Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 Route::get('/maqola',[MaqolaController::class, 'indexuser']);
 Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single']);
 
-Route::get('/maqolalar',[MaqolaController::class, 'index']);
+Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar');
 
-Route::get('/addmaqola',[MaqolaController::class, 'show']);
-Route::post('/uploadmaqola',[MaqolaController::class, 'create']);
+Route::get('/addmaqola',[MaqolaController::class, 'show'])->name('addmaqola1');
+Route::post('/uploadmaqola',[MaqolaController::class, 'create'])->name('uploadmaqola');
 
 Route::get('/editmaqola/{id}',[MaqolaController::class, 'edit']);
 Route::post('/updatemaqola/{id}',[MaqolaController::class, 'update']);
@@ -49,4 +50,14 @@ Route::get('/edit/{id}',[App\Http\Controllers\FayzullaController::class,'show'])
 Route::post('/update/{id}',[App\Http\Controllers\FayzullaController::class,'update']);
 Route::get('/delete/{id}',[App\Http\Controllers\FayzullaController::class,'destroy']);
 
+
 Route::get('/yangiliksingle/{id}',[App\Http\Controllers\FayzullaController::class,'single']);
+
+//diyorbek's route start
+
+Route::get('/ehsonlar',[EhsonController::class,'ehsonlar'])->name('ehsonlar');
+Route::get('/addehson',[EhsonController::class,'addehson'])->name('addehson');
+Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehson');
+
+//diyorbek's route  end
+
