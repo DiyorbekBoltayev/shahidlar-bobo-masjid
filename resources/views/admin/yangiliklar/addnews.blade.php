@@ -23,12 +23,12 @@
 
             <div class="div" style="padding: 20px;">
                 <label> Mavzusi </label>
-                <input class="form-control w-50 text-black"  type="text" name="mavzu" placeholder=" Maqola mavzusi.." required="">
+                <input class="form-control w-50 text-black"  type="text" name="mavzu" placeholder=" Yangilik mavzusi.." required="">
             </div>
 
             <div class="div" style="padding: 20px;">
                 <label> Matni </label>
-                <textarea name="matn" class="form-control text-black w-50" placeholder="Maqola matni.." ></textarea>
+                <textarea name="matn" class="form-control text-black w-50" placeholder="Yangilik matni.." ></textarea>
 
             </div>
 
