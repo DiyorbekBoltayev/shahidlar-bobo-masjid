@@ -9,7 +9,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('user.index');
+        $data = Yangilik::all();
+        return view('user.index',compact('data',$data));
     }
     public function adminmi(){
         return view('user.adminmi');

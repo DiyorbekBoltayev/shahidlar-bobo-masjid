@@ -112,5 +112,18 @@ class FayzullaController extends Controller
 
         $data=Yangilik::all();
         return view('admin.yangiliklar.shownews',compact('data',$data));
+
     }
+
+
+    public function single(Request $request,$id){
+
+        $data = Yangilik::find($id);
+        //dd($data);
+        return view('admin.yangiliklar.single',[
+            'data'=> $data]);
+    }
+
+
 }
+

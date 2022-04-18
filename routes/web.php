@@ -45,3 +45,5 @@ Route::get('/shownews',[App\Http\Controllers\FayzullaController::class,'store'])
 Route::get('/edit/{id}',[App\Http\Controllers\FayzullaController::class,'show']);
 Route::post('/update/{id}',[App\Http\Controllers\FayzullaController::class,'update']);
 Route::get('/delete/{id}',[App\Http\Controllers\FayzullaController::class,'destroy']);
+
+Route::get('/yangiliksingle/{id}',[App\Http\Controllers\FayzullaController::class,'single']);
