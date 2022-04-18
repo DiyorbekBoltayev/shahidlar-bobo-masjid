@@ -119,9 +119,15 @@ class FayzullaController extends Controller
     public function single(Request $request,$id){
 
         $data = Yangilik::find($id);
+        $dat= Yangilik::all();
         //dd($data);
         return view('admin.yangiliklar.single',[
-            'data'=> $data]);
+            'data'=> $data,
+            'dat'=>$dat
+        ]);
+
+
+
     }
 
 
