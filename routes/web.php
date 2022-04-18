@@ -25,6 +25,9 @@ Route::get('/adm',[HomeController::class,'adminmi'])->name('adminmi');
 Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 
+Route::get('/maqola',[MaqolaController::class, 'indexuser']);
+Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single']);
+
 Route::get('/maqolalar',[MaqolaController::class, 'index']);
 
 Route::get('/addmaqola',[MaqolaController::class, 'show']);

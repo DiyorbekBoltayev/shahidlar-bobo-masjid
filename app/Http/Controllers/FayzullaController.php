@@ -111,7 +111,7 @@ class FayzullaController extends Controller
         $data->delete();
 
         $data=Yangilik::all();
-        return view('admin.yangiliklar.shownews',compact('data',$data));
+        return view('admin.yangiliklar.shownews',compact('data'));
 
     }
 

@@ -15,6 +15,23 @@ class MaqolaController extends Controller
         return view('admin.maqolalar.maqola',compact('data'));
 
     }
+    public function indexuser()
+        {
+            $data = Maqola::all();
+            return view('user.maqola',compact('data'));
+
+        }
+
+    public function single($id)
+        {
+            $data = Maqola::find($id);
+            $dat = Maqola::all();
+            return view('user.maqola_single',[
+                'data'=>$data,
+                'dat'=>$dat
+            ]);
+
+        }
 
 
     public function create(Request $request)
@@ -35,12 +52,6 @@ class MaqolaController extends Controller
 
     return redirect()->back()->with('xabar','Malumot muoffaqiyatli qo`shildi!..');
 
-    }
-
-
-    public function store(Request $request)
-    {
-        //
     }
 
 
@@ -79,10 +90,11 @@ class MaqolaController extends Controller
 
     public function destroy($id)
     {
-        $data = Maqola::find($id);
+        $data=Maqola::find($id);
         $data->delete();
 
-        return view('admin.maqolalar.editmaqola')->with('xabar','Malumot muoffaqiyatli yangilandi!..');
+        $data = Maqola::all();
+        return view('admin.maqolalar.editmaqola', compact('data'))->with('xabar','Malumot muoffaqiyatli yangilandi!..');
 
     }
 }
