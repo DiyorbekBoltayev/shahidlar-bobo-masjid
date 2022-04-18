@@ -9,7 +9,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('user.index');
+        $data = Yangilik::all();
+        return view('user.index',compact('data'));
     }
     public function adminmi(){
         return view('user.adminmi');
@@ -31,7 +32,7 @@ class HomeController extends Controller
     public function yangiliklar()
     {
         $data=Yangilik::all();
-        return view('user.yangiliklar',compact('data',$data));
+        return view('user.yangiliklar',compact('data'));
     }
 
     public function kitoblar()

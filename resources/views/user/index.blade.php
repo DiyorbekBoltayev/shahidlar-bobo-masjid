@@ -14,39 +14,8 @@
                     <p class="mbr-text mbr-fonts-style display-7">Alloh taolo marhamat qiladi: “...va siz ehson qiling, Alloh taolo ehson qiluvchilarni yaxshi ko‘radi”. Yana bir oyatda: “Yaxshilik qiluvchilarga bu dunyoning o‘zida ham yaxshilik bor”, deyiladi.</p>
                     <div class="mbr-section-btn mt-3"><a class="btn btn-info display-4" href="page3.html#contacts2-1s">Ehson qilish</a></div>
                 </div>
-                <div class="col-6 col-lg-4"></div>
-                <div class="col-6 col-lg-3" style="background: #15a879">
-
-                    <table class="table text-white">
-                        <h2 class="text-white text text-center">Taqvim</h2>
-                        <tr>
-                            <th>Bomdod</th>
-                            <th>04:57</th>
-                        </tr>
-                        <tr>
-                            <th>Quyosh</th>
-                            <th>06:18</th>
-                        </tr>
-                        <tr>
-                            <th>Peshin</th>
-                            <th>12:58</th>
-                        </tr>
-                        <tr>
-                            <th>Asr</th>
-                            <th>17:41</th>
-                        </tr>
-                        <tr>
-                            <th>Shom</th>
-                            <th>19:38</th>
-                        </tr>
-                        <tr>
-                            <th>Xufton</th>
-                            <th>21:01</th>
-                        </tr>
-
-                    </table>
-                </div>
-
+                <div class="col-6 col-lg-3"></div>
+                @include('user.namoz_vaqti')
             </div>
         </div>
     </section>
@@ -82,113 +51,33 @@
 
         <div class="container-fluid">
             <div class="mbr-section-head">
-                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Our News</strong></h4>
-                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Read the latest news about Mobirise</h5>
+                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Yangiliklar</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Masjidimiz haqida so'ngi yangiliklar</h5>
             </div>
             <div class="row mt-4">
+
+                @foreach($data as $da)
+
                 <div class="item features-image сol-12 col-md-6 col-lg-4">
                     <div class="item-wrapper">
                         <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-768x576.jpg')}}" alt="" title="">
+                            <img src="/newsimage/{{$da->rasm}}" alt="" title="">
                         </div>
                         <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 10, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Easy and Simple</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Page Maker is a free and simple
-                                website builder - just drop site blocks to your page, add content and style it!</p>
+                            <h5 class="item-title mbr-fonts-style display-4"><em>{{$da->date}}</em></h5>
+                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>{{$da->mavzu}}</strong></h6>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">     {{ substr($da->matn, 0,80) }}...</p>
                         </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-1-768x576.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 09, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Automagically Mobile</strong>
-                            </h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Site Creator offers a huge
-                                collection of 3500+ site blocks, templates and themes with thousands flexible options. <br>
-                            </p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-768x250.jpeg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 08, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Boost Your Ranking</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Page Maker is a free and simple
-                                website builder - just drop site blocks to your page, add content and style it!</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
+                        <div class="mbr-section-btn item-footer mt-2"><a href="{{url('yangiliksingle',$da->id)}}" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
                     </div>
                 </div>
 
+
+                @endforeach
             </div>
         </div>
     </section>
 
-    <section class="content3 cid-t2TkdDvb5R" id="content3-y">
-
-
-        <div class="container-fluid">
-
-            <div class="row mt-4">
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-1-768x576.jpg')}}" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 10, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Easy and Simple</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Page Maker is a free and simple
-                                website builder - just drop site blocks to your page, add content and style it!</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
-                    </div>
-                </div>
-
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-768x250.jpeg')}}" alt="" title="" data-slide-to="1">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 08, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Boost Your Ranking</strong></h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Page Maker is a free and simple
-                                website builder - just drop site blocks to your page, add content and style it!</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
-                    </div>
-                </div><div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('/assets/images/mbr-768x576.jpg')}}" alt="" title="" data-slide-to="2">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-4"><em>Jan 09, 2025</em></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Automagically Mobile</strong>
-                            </h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Mobirise Site Creator offers a huge
-                                collection of 3500+ site blocks, templates and themes with thousands flexible options. <br>
-                            </p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="page5.html#content4-29" class="btn item-btn btn-primary-outline display-7" target="_blank">Read More &gt;</a></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <section class="map1 cid-t34f2JGzn4" id="map1-2n">
 
