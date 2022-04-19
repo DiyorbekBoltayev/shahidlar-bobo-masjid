@@ -3,7 +3,7 @@
     <div class="container" style="background: #ebedf2">
         <h1 class="text-primary text text-center">Ehson qo'shish</h1>
         <div class="w-100">
-            <form action="{{route('storeehson')}}" method="post" enctype="multipart/form-data">
+            <form action="{{url('storeehson')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-floating mb-3">
                     <label class="text text-primary" for="floatingInput1">Ehson haqida qisqacha m'lumot kiriting</label>
