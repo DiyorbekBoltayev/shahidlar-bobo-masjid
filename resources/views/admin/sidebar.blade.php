@@ -42,14 +42,14 @@
                     </a>
                 </li>
 
-                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('maqolalar') ? 'active' : '' }}">
                     <a href="{{url('maqolalar')}}">
                         <i class="fas fa-bookmark"></i>
                         <p>Maqolalar ro'yhati</p>
                     </a>
                 </li>
 
-                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('addmaqola1') ? 'active' : '' }}">
                     <a href="{{url('addmaqola')}}">
                         <i class="fas fa-bookmark"></i>
                         <p>Maqola qo'shish</p>
