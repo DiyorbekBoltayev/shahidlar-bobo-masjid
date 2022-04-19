@@ -57,5 +57,8 @@ Route::get('/yangiliksingle/{id}',[App\Http\Controllers\FayzullaController::clas
 Route::get('/ehsonlar',[EhsonController::class,'ehsonlar'])->name('ehsonlar');
 Route::get('/addehson',[EhsonController::class,'addehson'])->name('addehson');
 Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehson');
+Route::get('/editehson/{id}',[EhsonController::class,'editehson'])->name('editehson');
+Route::post('/editstore/{id}',[EhsonController::class,'editstore'])->name('editsave');
+Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsondelete');
 //diyorbek's route  end
 
