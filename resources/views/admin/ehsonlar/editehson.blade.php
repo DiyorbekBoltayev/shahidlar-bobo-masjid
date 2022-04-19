@@ -10,7 +10,7 @@
                     <input type="text" name="title" value="{{$data->title}}" class="form-control" id="floatingInput1" required placeholder="Kiriting...">
                 </div>
                 <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput2">Zarur bo'lgan pul iqdorini kiriting</label>
+                    <label class="text text-primary" for="floatingInput2">Zarur bo'lgan pul miqdorini kiriting</label>
                     <input type="text" name="summa" value="{{$data->summa}}" class="form-control" id="floatingInput2" required placeholder="Kiriting...">
                 </div>
                 <div class="form-floating mb-3">
