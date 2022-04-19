@@ -11,6 +11,10 @@ class EhsonController extends Controller
     $found=Ehson::find($id);
     return view('admin.ehsonlar.editehson',['data'=>$found]);
     }
+    public function single($id){
+        $data=Ehson::find($id);
+        return view('user.ehson_single',['data'=>$data]);
+    }
     public function delete($id){
         $data=Ehson::find($id);
         $data->delete();

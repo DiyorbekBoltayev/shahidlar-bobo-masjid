@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ehson;
 use Illuminate\Http\Request;
 use App\Models\Yangilik;
 
@@ -25,8 +26,8 @@ class HomeController extends Controller
     }
 
     public function ehson()
-    {
-        return view('user.ehson');
+    {   $data=Ehson::paginate(2);
+        return view('user.ehson',['data'=>$data]);
     }
 
     public function yangiliklar()

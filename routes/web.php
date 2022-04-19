@@ -54,4 +54,5 @@ Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehs
 Route::get('/editehson/{id}',[EhsonController::class,'editehson'])->name('editehson');
 Route::post('/editstore/{id}',[EhsonController::class,'editstore'])->name('editsave');
 Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsondelete');
+Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle');
 //diyorbek's route  end
