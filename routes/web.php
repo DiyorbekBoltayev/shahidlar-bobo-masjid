@@ -27,22 +27,16 @@ Route::get('/adm',[HomeController::class,'adminmi'])->name('adminmi');
 Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 
-<<<<<<<<< Temporary merge branch 1
+
 Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar');
-=========
-Route::get('/maqola',[MaqolaController::class, 'indexuser']);
-Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single']);
-
-Route::get('/maqolalar',[MaqolaController::class, 'index']);
->>>>>>>>> Temporary merge branch 2
-
-Route::get('/addmaqola',[MaqolaController::class, 'show']);
-Route::post('/uploadmaqola',[MaqolaController::class, 'create']);
-
-Route::get('/editmaqola/{id}',[MaqolaController::class, 'edit']);
-Route::post('/updatemaqola/{id}',[MaqolaController::class, 'update']);
-
-Route::get('/deletemaqola/{id}',[MaqolaController::class, 'destroy']);
+Route::get('/maqola',[MaqolaController::class, 'indexuser'])->name('maqola');
+Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single'])->name('maqolasingle');
+Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar');
+Route::get('/addmaqola',[MaqolaController::class, 'show'])->name('addmaqola');
+Route::post('/uploadmaqola',[MaqolaController::class, 'create'])->name('uploadmaqola');
+Route::get('/editmaqola/{id}',[MaqolaController::class, 'edit'])->name('editmaqola');
+Route::post('/updatemaqola/{id}',[MaqolaController::class, 'update'])->name('updatemaqola');
+Route::get('/deletemaqola/{id}',[MaqolaController::class, 'destroy'])->name('deletemaqola');
 
 
 
@@ -55,24 +49,21 @@ Route::get('/edit/{id}',[App\Http\Controllers\FayzullaController::class,'show'])
 Route::post('/update/{id}',[App\Http\Controllers\FayzullaController::class,'update']);
 Route::get('/delete/{id}',[App\Http\Controllers\FayzullaController::class,'destroy']);
 
-//diyorbek's route start
+
 Route::get('/ehsonlar',[EhsonController::class,'ehsonlar'])->name('ehsonlar');
 Route::get('/addehson',[EhsonController::class,'addehson'])->name('addehson');
 Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehson');
-<<<<<<<<< Temporary merge branch 1
-=========
+
+
 Route::get('/editehson/{id}',[EhsonController::class,'editehson'])->name('editehson');
 Route::post('/editstore/{id}',[EhsonController::class,'editstore'])->name('editsave');
 Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsondelete');
 Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle');
->>>>>>>>> Temporary merge branch 2
-//diyorbek's route  end
 
-//bahromjon's route start
-//
+
 Route::get('/addbook',[KitobController::class,'index']);
 Route::post('/sendbooks',[KitobController::class,'create']);
 Route::get('/showbook',[KitobController::class,'store']);
-Route::get('/editbook/{id}',[App\Http\Controllers\KitobController::class,'show']);
+Route::get('/editbook/{id}',[KitobController::class,'show']);
 
 

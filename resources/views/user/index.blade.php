@@ -23,42 +23,27 @@
 
 
     <section class="image2 cid-t2Tpcrw4DS" id="image2-15">
-        @foreach( $dat as $da )
+
 
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="image-wrapper">
-                            <img src="maqola_rasm/{{$da->rasm}}" alt="Mobirise">
+                            <img src="maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
                         </div>
                     </div>
                     <div class="col-12 col-lg">
 
                         <div class="text-wrapper">
                             <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
-                                <strong>{{ $da->mavzu }}</strong></h3>
+                                <strong>{{ $dat->mavzu }}</strong></h3>
                             <p class="mbr-text mbr-fonts-style display-7">
-                            {{substr($da->matn, 0, 400 )}}
+                            {{substr($dat->matn, 0, 400 )}}
                         </div>
                     </div>
                 </div>
             </div>
 
-        @endforeach
-
-        <section class="content12 cid-t34gh8nW7r" id="content12-2s">
-
-            <div class="container">
-                <div class="row justify-content-center">
-                    @if($dat->links())
-                        <div class="mt-4 p-4 box has-text-centered">
-                            {{ $dat->links() }}
-                        </div>
-                    @endif
-                </div>
-            </div>
-
-        </section>
 
 
     </section>

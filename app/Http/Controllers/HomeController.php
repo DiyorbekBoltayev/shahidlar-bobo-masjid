@@ -12,8 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = Yangilik::all();
-        $dat = Maqola::paginate(1);
-
+        $dat = Maqola::orderBy('id', 'desc')->first();
         return view('user.index',[
             'data'=>$data,
             'dat'=>$dat
