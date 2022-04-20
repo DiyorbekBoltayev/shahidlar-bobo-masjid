@@ -19,10 +19,6 @@
 </section>
 
 <section class="image3 cid-t2UlXuaXdu" id="image3-2b">
-
-
-
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6">
@@ -52,25 +48,20 @@
     </div>
 </section>
 
-<section class="content7 cid-t2Um1feLDZ" id="content7-2d">
 
-
-</section>
 
 <section class="gallery5 mbr-gallery cid-t2UmeiYCnV" id="gallery5-2g">
-    <?php $f=0 ?>
-@foreach($dat as $d)
-@if($d->id!=$data->id)
-   <?php $f+=1 ?>
-
-
     <div class="container">
+
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2"><strong>Boshqa yangiliklar</strong></h3>
-
         </div>
 
         <div class="row mbr-gallery mt-4">
+            <?php $f=0 ?>
+            @foreach($dat as $d)
+                @if($d->id!=$data->id)
+                    <?php $f+=1 ?>
             <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                 <div class="item-wrapper" data-toggle="modal" data-target="#t34lQ6dwxc-modal">
                     <img class="w-100" src="/newsimage/{{$d->rasm}}" alt="" data-slide-to="0" data-target="#lb-t34lQ6dwxc">
@@ -79,16 +70,21 @@
                 <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">
                     {{ substr($d->mavzu, 0,15) }}... <a href="{{url('yangiliksingle',$d->id)}}" class="text-primary">Batafsil</a>
                 </h6>
-            </div>
 
+            </div>
+                        @if($f==4)@break
+                        @endif
+                    @endif
+                @endforeach
         </div>
 
+
     </div>
-       @if($f==4)@break
-       @endif
-            @endif
-        @endforeach
+
 </section>
+
+
+
 
 
 
