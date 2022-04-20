@@ -32,8 +32,8 @@ class HomeController extends Controller
 
     public function yangiliklar()
     {
-        $data=Yangilik::all();
-        return view('user.yangiliklar',compact('data'));
+        $data=Yangilik::paginate(1);
+        return view('user.yangiliklar',['data'=>$data]);
     }
 
     public function kitoblar()

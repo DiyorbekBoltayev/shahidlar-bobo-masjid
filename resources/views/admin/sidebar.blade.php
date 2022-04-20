@@ -56,6 +56,13 @@
                     </a>
                 </li>
 
+                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                    <a href="{{url('/')}}">
+                        <i class="fas fa-exit"></i>
+                        <p>Chiqish</p>
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>
