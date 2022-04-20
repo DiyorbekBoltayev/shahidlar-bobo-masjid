@@ -9,17 +9,14 @@
         <div class="row justify-content-center">
 
 
-                <?php $t=0; ?>
-
                 @foreach( $data as $dat )
-                    <?php $t++; ?>
 
                     <div class="card col-12 col-lg-6">
                         <div class="card-wrapper mbr-flex">
                             <div class="card-box align-left">
 
                                 <h5 class="card-title mbr-fonts-style align-left mb-3 display-5">
-                                    <strong>{{$dat->mavzu}}</strong>
+                                    <strong>{{ substr($dat->mavzu, 0, 30 ) }}</strong>
                                 </h5>
                                 <p class="mbr-text mbr-fonts-style mb-3 display-4">{{ substr($dat->matn, 0,40) }}... </p>
                                 <p class="mbr-text mbr-fonts-style mb-3 display-4"> Autor: {{ $dat->autor }} </p>
@@ -31,7 +28,6 @@
                         </div>
                     </div>
 
-                    @if($t==4) @break @endif
                 @endforeach
 
         </div>
@@ -45,12 +41,11 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <div class="mbr-section-btn align-center">
-                    <a class="btn btn-primary display-4" href="">Previous</a>
-                    <a class="btn btn-primary display-4" href="">Next</a>
+            @if ($data->links())
+                <div class="mt-4 p-4 box has-text-centered">
+                    {{ $data->links() }}
                 </div>
-            </div>
+            @endif
         </div>
     </div>
 

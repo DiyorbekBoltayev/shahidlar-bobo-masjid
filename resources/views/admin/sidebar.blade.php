@@ -14,28 +14,28 @@
                         <p>Ehson qo'shish</p>
                     </a>
                 </li>
-                <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
+                <li class="nav-item {{ request()->routeIs('shownews') ? 'active' : '' }} ">
                     <a href="{{route('shownews')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Yangiliklar ro'yhati</p>
                     </a>
                 </li>
 
-                <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
+                <li class="nav-item {{ request()->routeIs('addnews') ? 'active' : '' }} ">
                     <a href="{{route('addnews')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Yangilik qo'shish</p>
                     </a>
                 </li>
 
-                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('showbook') ? 'active' : '' }}">
                     <a href="{{url('showbook')}}">
                         <i class="fas fa-book"></i>
                         <p>Kitoblar ro'yhati</p>
                     </a>
                 </li>
 
-                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('addbook') ? 'active' : '' }}">
                     <a href="{{url('addbook')}}">
                         <i class="fas fa-book"></i>
                         <p>Kitob qo'shish</p>
@@ -49,10 +49,17 @@
                     </a>
                 </li>
 
-                <li class="nav-item {{  request()->routeIs('addmaqola1') ? 'active' : '' }}">
-                    <a href="{{url('addmaqola')}}">
+                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
+                    <a href="{{route('addmaqola')}}">
                         <i class="fas fa-bookmark"></i>
                         <p>Maqola qo'shish</p>
+                    </a>
+                </li>
+
+                <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
+                    <a href="{{url('/')}}">
+                        <i class="fas fa-exit"></i>
+                        <p>Chiqish</p>
                     </a>
                 </li>
 

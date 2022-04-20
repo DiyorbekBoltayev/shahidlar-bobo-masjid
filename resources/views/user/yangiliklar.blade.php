@@ -67,10 +67,11 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-8">
-                    <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href=""><span class="mobi-mbri mobi-mbri-arrow-prev mbr-iconfont mbr-iconfont-btn"></span></a>
-                        <a class="btn btn-primary display-4" href=""><span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span></a></div>
-                </div>
+                @if ($data->links())
+                    <div class="mt-4 p-4 box has-text-centered">
+                        {{ $data->links() }}
+                    </div>
+                @endif
             </div>
         </div>
     </section>

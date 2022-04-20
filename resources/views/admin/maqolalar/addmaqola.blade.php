@@ -24,7 +24,7 @@
 
                 <div class="form-floating mb-3">
                     <label class="text text-primary" for="floatingInput1">Autori</label>
-                    <input type="text" name="autor" class="form-control" id="floatingInput1" required placeholder="Rasm kiriting..">
+                    <input type="text" name="autor" class="form-control" id="floatingInput1" required placeholder="Autor kiriting..">
                 </div>
 
                 <div class="form-floating mb-3">

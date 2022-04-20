@@ -17,7 +17,7 @@ class MaqolaController extends Controller
     }
     public function indexuser()
         {
-            $data = Maqola::all();
+            $data = Maqola::paginate(4);
             return view('user.maqola',compact('data'));
 
         }

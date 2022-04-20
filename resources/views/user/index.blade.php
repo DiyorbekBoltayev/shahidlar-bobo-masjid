@@ -1,7 +1,7 @@
 @extends('user.master')
 @section('content')
 
-    <section class="engine"><a href="https://mobirise.info/j">website templates</a></section><section class="header1 cid-t2SQd1abIs mbr-fullscreen mbr-parallax-background" id="header1-l">
+    <section class="engine"><a href="https://mobirise.info/j">Ehsonlar</a></section><section class="header1 cid-t2SQd1abIs mbr-fullscreen mbr-parallax-background" id="header1-l">
 
 
         <div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(250, 250, 250);"></div>
@@ -12,7 +12,7 @@
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Masjid uchun ehson qiling.</strong></h1>
 
                     <p class="mbr-text mbr-fonts-style display-7">Alloh taolo marhamat qiladi: “...va siz ehson qiling, Alloh taolo ehson qiluvchilarni yaxshi ko‘radi”. Yana bir oyatda: “Yaxshilik qiluvchilarga bu dunyoning o‘zida ham yaxshilik bor”, deyiladi.</p>
-                    <div class="mbr-section-btn mt-3"><a class="btn btn-info display-4" href="page3.html#contacts2-1s">Ehson qilish</a></div>
+                    <div class="mbr-section-btn mt-3"><a class="btn btn-info display-4" href="{{url('/ehson')}}">Ehson qilish</a></div>
                 </div>
                 <div class="col-6 col-lg-3"></div>
                 @include('user.namoz_vaqti')
@@ -20,34 +20,53 @@
         </div>
     </section>
 
+
+
     <section class="image2 cid-t2Tpcrw4DS" id="image2-15">
+        @foreach( $dat as $da )
 
-
-
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="image-wrapper">
-                        <img src="{{asset('/assets/images/5.jpg')}}" alt="Mobirise">
-                        <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">
-                            Image Description</p>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="image-wrapper">
+                            <img src="maqola_rasm/{{$da->rasm}}" alt="Mobirise">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg">
-                    <div class="text-wrapper">
-                        <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
-                            <strong>Image with Description</strong></h3>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Use Mobirise website building software to create multiple sites for commercial and non-profit projects. Click on the image in this block to replace it. You can add a description below your image, or on the side. If you want to hide some of the text fields, open the Block parameters, and uncheck relevant options.</p>
+                    <div class="col-12 col-lg">
+
+                        <div class="text-wrapper">
+                            <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+                                <strong>{{ $da->mavzu }}</strong></h3>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            {{substr($da->matn, 0, 400 )}}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        @endforeach
+
+        <section class="content12 cid-t34gh8nW7r" id="content12-2s">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    @if($dat->links())
+                        <div class="mt-4 p-4 box has-text-centered">
+                            {{ $dat->links() }}
+                        </div>
+                    @endif
+                </div>
+            </div>
+
+        </section>
+
+
     </section>
 
-    <section class="content3 cid-t2Tkc4k8md" id="content3-x">
 
+
+
+    <section class="content3 cid-t2Tkc4k8md" id="content3-x">
 
         <div class="container-fluid">
             <div class="mbr-section-head">

@@ -18,6 +18,7 @@ $xufton = $prayerArray['data']['timings']['Isha'];
 
 $xijriy_sana = $prayerArray['data']['date']['hijri']['day'].", ".$prayerArray['data']['date']['hijri']['month']['en'].", ".$prayerArray['data']['date']['hijri']['year'];
 
+$asr[1]=$asr[1]+1;
 
 ?>
 
