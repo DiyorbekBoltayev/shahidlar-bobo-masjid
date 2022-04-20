@@ -34,7 +34,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobiri.se">
+                    <a href="{{url('/')}}">
                         <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise" style="height: 5.9rem;">
                     </a>
                 </span>
@@ -61,10 +61,10 @@
                     <a class="iconfont-wrapper" href="https://fecebook.com" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="" target="_blank">
+                    <a class="iconfont-wrapper" href="https://t.me/Xojan1yozov_Fayzulla" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-telegram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="" target="_blank">
+                    <a class="iconfont-wrapper" href="https://www.instagram.com/fayzulla_official_" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
 
@@ -91,12 +91,12 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
-                    <strong>About</strong>
+                    <strong>Biz haqimizda</strong>
                 </h5>
                 <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                    Mobirise is a free offline app for
-                    Windows and Mac to easily create small/medium websites, landing pages, online resumes and
-                    portfolios.</p>
+                    Masjid Imom noibi raqami:+123456789;
+
+                </p>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
                     <strong>Follow Us</strong>
                 </h5>
@@ -112,12 +112,12 @@
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://twitter.com/mobirise" target="_blank">
+                        <a href="https://www.instagram.com/fayzulla_official_" target="_blank">
                             <span class="mbr-iconfont socicon socicon-instagram"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://twitter.com/mobirise" target="_blank">
+                        <a href="https://t.me/Xojan1yozov_Fayzulla" target="_blank">
                             <span class="mbr-iconfont socicon-telegram socicon"></span>
                         </a>
                     </div>
@@ -125,25 +125,22 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
-                    <strong>Mobirise Help</strong>
+                    <strong>Menu</strong>
                 </h5>
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap">Help Center</li>
-                    <li class="mbr-text item-wrap">Mobirise Forums</li>
-                    <li class="mbr-text item-wrap">Mobirise Kit</li>
-                    <li class="mbr-text item-wrap">Our site</li>
+                    <a href="{{url('/ehson')}}"> <li class="mbr-text item-wrap">Ehson qilish</li></a>
+                    <a href="{{url('/yangiliklar')}}"> <li class="mbr-text item-wrap">Yangiliklar</li></a>
+
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
-                    <strong>Mobirise Extensions</strong>
+                    <strong>Menu</strong>
                 </h5>
 
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap">Code Editor</li>
-                    <li class="mbr-text item-wrap">Form Builder</li>
-                    <li class="mbr-text item-wrap">Popup Builder</li>
-                    <li class="mbr-text item-wrap">Enterprise</li>
+                    <a href="{{url('/maqola')}}"> <li class="mbr-text item-wrap">Maqolalar</li></a>
+                    <a href="{{'/kitoblar'}}"> <li class="mbr-text item-wrap">Kitoblar</li></a>
 
                 </ul>
                 <a href="{{route('adminmi')}}" class="btn btn-primary"> Admin sifatida kirish</a>

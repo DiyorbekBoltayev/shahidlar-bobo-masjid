@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function yangiliklar()
     {
-        $data=Yangilik::paginate(1);
+        $data=Yangilik::paginate(2);
         return view('user.yangiliklar',['data'=>$data]);
     }
 
