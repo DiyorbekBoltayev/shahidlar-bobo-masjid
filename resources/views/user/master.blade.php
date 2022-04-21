@@ -34,7 +34,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobiri.se">
+                    <a href="#">
                         <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise" style="height: 5.9rem;">
                     </a>
                 </span>

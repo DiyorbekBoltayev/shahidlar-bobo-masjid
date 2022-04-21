@@ -64,11 +64,12 @@
                     <?php $f+=1 ?>
             <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                 <div class="item-wrapper" data-toggle="modal" data-target="#t34lQ6dwxc-modal">
-                    <img class="w-100" src="/newsimage/{{$d->rasm}}" alt="" data-slide-to="0" data-target="#lb-t34lQ6dwxc">
+
+                    <img style="width: 300px; height: 300px; " src="/newsimage/{{$d->rasm}}" alt="" data-slide-to="0" data-target="#lb-t34lQ6dwxc">
 
                 </div>
                 <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">
-                    {{ substr($d->mavzu, 0,15) }}... <a href="{{url('yangiliksingle',$d->id)}}" class="text-primary">Batafsil</a>
+                    {{ substr($d->mavzu, 0, 50) }}... <a href="{{url('yangiliksingle',$d->id)}}" class="text-primary">Batafsil</a>
                 </h6>
 
             </div>
