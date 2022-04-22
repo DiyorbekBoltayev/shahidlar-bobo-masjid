@@ -39,7 +39,7 @@
 
                     <td>
                         <a href="{{url('editbook',$d->id)}}"> <button class="btn btn-warning">Tahrirlash</button></a>
-                        <a href="{{url('delete',$d->id)}}"> <button class="btn btn-danger">O'chirish</button></a>
+                        <a href="{{url('deletebook',$d->id)}}"> <button class="btn btn-danger">O'chirish</button></a>
 
                     </td>
                 </tr>

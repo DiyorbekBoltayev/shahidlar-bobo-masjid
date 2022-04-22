@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Kitob;
+use App\Models\Yangilik;
 use Illuminate\Http\Request;
 
 class KitobController extends Controller
@@ -41,7 +42,7 @@ class KitobController extends Controller
         $data->file=$bookname;
 
         $data->save();
-        return redirect(route('addnews'));
+        return redirect(route('showbook'));
     }
 
     /**
@@ -53,10 +54,8 @@ class KitobController extends Controller
 
     public function store(Request $request)
     {
-      $data=Kitob::all();
-      return  view('admin.kitoblar.showbook', [
-          "dat"=>$data
-      ]);
+      $dat=Kitob::all();
+      return  view('admin.kitoblar.showbook',compact('dat'));
     }
 
     /**
@@ -106,6 +105,40 @@ class KitobController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=Kitob::find($id);
+        $data->delete();
+
+        $dat=Kitob::all();
+        return  view('admin.kitoblar.showbook',compact('dat'));
     }
+
+    public function kitoblar()
+    {
+        $data = Kitob::paginate(8);
+
+        return view('user.kitoblar',compact('data'));
+    }
+
+    public function getDownload($id){
+        //PDF file is stored under project/public/download/info.pdf
+
+        $file = Kitob::find($id);
+
+        return Response::download($file);
+
+    }
+
+    public function getDownload($id)
+    {
+        //PDF file is stored under project/public/download/info.pdf
+        $file= public_path().Kitob::find($id);
+
+        $headers = array(
+            'Content-Type: application/pdf'
+        );
+
+        return Response::download($file, 'filename.pdf', $headers);
+    }
+
+
 }
