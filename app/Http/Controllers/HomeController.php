@@ -18,7 +18,6 @@ class HomeController extends Controller
             'dat'=>$dat
         ]);
 
-
     }
 
     public function adminmi(){
