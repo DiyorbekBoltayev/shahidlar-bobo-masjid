@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ehson;
 use App\Models\Maqola;
+use App\Models\Namoz;
 use Illuminate\Http\Request;
 use App\Models\Yangilik;
 
@@ -13,9 +14,11 @@ class HomeController extends Controller
     {
         $data = Yangilik::orderBY('id','desc')->get();
         $dat = Maqola::orderBy('id', 'desc')->first();
+        $da = Namoz::all();
         return view('user.index',[
             'data'=>$data,
-            'dat'=>$dat
+            'dat'=>$dat,
+            'da'=>$da
         ]);
 
     }

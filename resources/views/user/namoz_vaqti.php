@@ -37,11 +37,11 @@ $asr[1]=$asr[1]+1;
 
         <tr>
             <th>Bomdod</th>
-            <th> <?php echo $bomdod ?> </th>
+            <th> {{$da->Bamdod}} </th>
         </tr>
         <tr>
             <th>Quyosh</th>
-            <th><?php echo $quyosh ?></th>
+            <th>{{$da->Quyosh}}</th>
         </tr>
         <tr>
             <th>Peshin</th>
