@@ -59,21 +59,14 @@
                 <li class="nav-item {{  request()->routeIs('shownamoz') ? 'active' : '' }}">
                     <a href="{{route('shownamoz')}}">
                         <i class="fas fa-clock"></i>
-                        <p>Namoz Vaqtlari </p>
-                    </a>
-                </li>
-
-                <li class="nav-item {{  request()->routeIs('namoztime') ? 'active' : '' }}">
-                    <a href="{{route('namoztime')}}">
-                        <i class="fas fa-clock"></i>
-                        <p>Namoz Vaqtlari qo'shish</p>
+                        <p>Namoz Vaqti </p>
                     </a>
                 </li>
 
 
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="{{url('/')}}">
-                        <i class="fas fa-exit"></i>
+                        <i class="fas fa-backspace"></i>
                         <p>Chiqish</p>
                     </a>
                 </li>

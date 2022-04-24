@@ -12,9 +12,7 @@ class AdminController extends Controller
         return view('admin.ehsonlar.ehsonshow',['data'=>$data]);
     }
 
-public function namoztime(){
-        return view('admin.namozvaqti');
-}
+
 
 public function  addnamoz(Request $request){
         $data=new Namoz();
