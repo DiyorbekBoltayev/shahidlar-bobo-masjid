@@ -4,12 +4,12 @@
 
         <div class="container" align="center">
 
-    <form action="{{url('addnamoz')}}" method="get" enctype="multipart/form-data">
+    <form action="{{url('addnamoz')}}" method="post" enctype="multipart/form-data">
         @csrf
         <h1 class="title"> Namoz vaqtlari qo'shish</h1>
 
         <div class="div" style="padding: 20px;">
-            <label> Bamdod </label>
+            <label> Bomdod </label>
             <input class="form-control w-50 text-black"  type="text" name="bamdod" placeholder=" Bamdod " required="">
         </div>
 

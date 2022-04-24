@@ -63,7 +63,7 @@ Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsond
 Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle');
 /////////////////////////////
 
-Route::post('/namoztime',[App\Http\Controllers\AdminController::class,'namoztime'])->name('namoztime');
+Route::get('/namoztime',[App\Http\Controllers\AdminController::class,'namoztime'])->name('namoztime');
 Route::post('/addnamoz',[App\Http\Controllers\AdminController::class,'addnamoz'])->name('addnamoz');
 Route::get('/shownamoz',[App\Http\Controllers\AdminController::class,'shownamoz'])->name('shownamoz');
 Route::get('/editnamoz/{id}',[App\Http\Controllers\AdminController::class,'editnamoz']);
