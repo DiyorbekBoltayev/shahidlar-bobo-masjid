@@ -13,7 +13,7 @@
                             <h2 class="card-title mbr-fonts-style mb-3 display-2">
                                 <strong>{{$data->title}}</strong></h2>
                             <p class="mbr-text mbr-fonts-style display-7">{{$data->text}}.</p>
-
+                            <img src="/imgehson/{{$data->img}}" style="width: 80%; margin: 10px auto " alt="">
                         </div>
                     </div>
                 </div>
