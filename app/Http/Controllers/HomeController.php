@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ehson;
+use App\Models\Kitob;
 use App\Models\Maqola;
 use App\Models\Namoz;
 use Illuminate\Http\Request;
@@ -48,8 +49,8 @@ class HomeController extends Controller
     }
 
     public function kitoblar()
-    {
-        return view('user.kitoblar');
+    {   $data=Kitob::paginate(4);
+        return view('user.kitoblar',['data'=>$data]);
     }
 
 

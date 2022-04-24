@@ -123,22 +123,11 @@ class KitobController extends Controller
         //PDF file is stored under project/public/download/info.pdf
 
         $file = Kitob::find($id);
-
-        return Response::download($file);
-
+        $path=public_path("bookimage/$file->file");
+        return response()->download($path);
     }
 
-    public function getDownload($id)
-    {
-        //PDF file is stored under project/public/download/info.pdf
-        $file= public_path().Kitob::find($id);
 
-        $headers = array(
-            'Content-Type: application/pdf'
-        );
-
-        return Response::download($file, 'filename.pdf', $headers);
-    }
 
 
 }

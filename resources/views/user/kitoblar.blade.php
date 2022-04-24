@@ -2,8 +2,7 @@
 @section('content')
 
 
-
-    <section class="engine"><a href="https://mobirise.info/i">free website creation software</a></section><section class="gallery3 cid-t34eNDZm1O" id="gallery3-2k">
+<section class="gallery3 cid-t34eNDZm1O" id="gallery3-2k">
 
 
         <div class="container-fluid">
@@ -30,7 +29,7 @@
                                 <p class="mbr-text mbr-fonts-style mt-3 display-7">
                                     {{$dat->avtor}}
                                 </p>
-                                <a href="/download/{{$dat->id}}" class="btn btn-primary">Yuklab olish.</a>
+                                <a href="{{route('yukla',$dat->id)}}" class="btn btn-primary">Yuklab olish.</a>
                             </div>
                     </div>
                 </div>

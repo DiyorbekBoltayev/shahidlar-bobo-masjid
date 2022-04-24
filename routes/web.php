@@ -75,5 +75,6 @@ Route::get('/addbook',[KitobController::class,'index']);
 Route::post('/sendbooks',[KitobController::class,'create']);
 Route::get('/showbook',[KitobController::class,'store']);
 Route::get('/editbook/{id}',[KitobController::class,'show']);
+Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla');
 
 
