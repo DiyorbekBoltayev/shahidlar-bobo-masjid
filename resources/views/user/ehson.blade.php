@@ -40,7 +40,7 @@
                                         <strong>{{$d->title}}</strong>
                                     </h6>
                                     <p class="mbr-text mbr-fonts-style display-15">
-                                        {{$d->text}}
+                                        {{substr($d->text,0,300)}}...
 
                                     </p>
                                 </div>

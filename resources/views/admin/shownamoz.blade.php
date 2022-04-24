@@ -14,20 +14,20 @@
 
         <table class="table table-bordered border-primary ">
             <tr>
-                <th id="th">ID</th>
-                <th id="th">Bamdod</th>
+
+                <th id="th">Bomdod</th>
                 <th id="th">Quyosh</th>
                 <th id="th">Peshin</th>
                 <th id="th">Asr</th>
                 <th id="th">Shom</th>
                 <th id="th">Xufton</th>
-                <th id="th">Action</th>
+                <th id="th">Amallar</th>
 
             </tr>
 
 @foreach($data as $da)
                 <tr>
-                    <td>{{$da->id}}</td>
+
                     <td id="td">{{$da->Bamdod}}</td>
                     <td id="td">{{$da->Quyosh}}</td>
                     <td id="td">{{$da->Peshin}}</td>
@@ -36,7 +36,7 @@
                     <td id="td">{{$da->Xufton}}</td>
 
                     <td>
-                        <a href="{{url('editnamoz',$da->id)}}"> <button class="btn btn-warning">Tahrirlash</button></a>
+                        <a href="{{url('editnamoz',$da->id)}}"> <button class="btn btn-primary">Tahrirlash</button></a>
 
 
                     </td>

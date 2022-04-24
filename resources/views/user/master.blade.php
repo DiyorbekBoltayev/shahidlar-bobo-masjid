@@ -58,13 +58,13 @@
                 </ul>
 
                 <div class="icons-menu">
-                    <a class="iconfont-wrapper" href="https://www.youtube.com/channel/UC_k9p3pSJksWeVzITcVkjnw" target="_blank">
+                    <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-youtube socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://t.me/ozodbek_ozodov1" target="_blank">
+                    <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-telegram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://www.instagram.com/ozodbek_ozodov1/" target="_blank">
+                    <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
 
@@ -94,35 +94,14 @@
                     <strong>Biz haqimizda </strong>
                 </h5>
                 <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                    Mobirise is a free offline app for
-                    Windows and Mac to easily create small/medium websites, landing pages, online resumes and
-                    portfolios.
+                    Хоразм вилояти Урганч тумани Қиёт махалласи. Мулжал: Пахтакор коллежи, "Шаҳид бобо" масжиди қурилиши гуруҳи:
+                    Шахид бобо масжиди
+                    Агробанк Коровул филиали
+                    Х/р 20212000303998404001
+                    МФО:00569
+                    СТИР:202877096
                 </p>
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
-                    <strong> Biz bilan bog`laning </strong>
-                </h5>
-                <div class="social-row display-7">
-                    <div class="soc-item">
-                        <a href="https://www.facebook.com/profile.php?id=100073672038788" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://www.youtube.com/channel/UC_k9p3pSJksWeVzITcVkjnw" target="_blank">
-                            <span class="mbr-iconfont socicon-youtube socicon"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://www.instagram.com/ozodbek_ozodov1/" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-instagram"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://t.me/ozodbek_ozodov1" target="_blank">
-                            <span class="mbr-iconfont socicon-telegram socicon"></span>
-                        </a>
-                    </div>
-                </div>
+
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
@@ -134,6 +113,31 @@
                     <li class="mbr-text item-wrap">Mobirise Kit</li>
                     <li class="mbr-text item-wrap">Our site</li>
                 </ul>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+                    <strong> Biz bilan bog`laning </strong>
+                </h5>
+                <div class="social-row display-7">
+                    <div class="soc-item">
+                        <a href="https://t.me/shahidlarbobo" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-facebook"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://youtu.be/SMhc8SftOPw" target="_blank">
+                            <span class="mbr-iconfont socicon-youtube socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://t.me/shahidlarbobo" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-instagram"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://t.me/shahidlarbobo" target="_blank">
+                            <span class="mbr-iconfont socicon-telegram socicon"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">

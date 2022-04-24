@@ -1,6 +1,6 @@
 @extends('user.master')
 @section('content')
-    <section class="header12 cid-t3szbLyPVc m-3" id="header12-3a">
+    <section class="header12 cid-t3szbLyPVc m-3 " id="header12-3a">
 
 
 
@@ -12,16 +12,15 @@
                         <div class="card-box align-center mt-4">
                             <h2 class="card-title mbr-fonts-style mb-3 display-2">
                                 <strong>{{$data->title}}</strong></h2>
-                            <p class="mbr-text mbr-fonts-style display-7">{{$data->text}}.</p>
-                            <img src="/imgehson/{{$data->img}}" style="width: 80%; margin: 10px auto " alt="">
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="content13 cid-t3szyH6V9N" id="content13-3c">
+    <section class="content13 cid-t3szyH6V9N"  id="content13-3c">
 
 
         <div class="container">
@@ -53,4 +52,25 @@
                 </div>
             </div>
         </div>
-    </section>@endsection
+    </section>
+    <section class="content15 cid-t34h2i9ioH" id="content15-2x">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="card col-md-12 col-lg-11">
+                    <div class="card-wrapper">
+                        <div class="card-box align-left">
+                            <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
+                                <strong>{{$data->title}}</strong></h4>
+
+                            <p class="mbr-text mbr-fonts-style display-7">{{$data->text}}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <img src="/imgehson/{{$data->img}}" style="width: 80%; margin: 10px auto " alt="">
+
+@endsection

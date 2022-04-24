@@ -31,7 +31,7 @@
 
                     <td id="td">{{$d->avtor}}</td>
 
-                    <td><a class="" href="/bookiimage/{{$d->file}}" download="{{$d->file}}"> Yuklab olish </a></td>
+                    <td><a class="" href="{{route('yukla',$d->id)}}" > Yuklab olish </a></td>
 
                     <td>
                         <img style="width: 100px; height: 100px;" src="/newsimage/{{$d->rasm}}" alt="">
