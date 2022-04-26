@@ -30,7 +30,7 @@ public function  addnamoz(Request $request){
 
 public function shownamoz(){
     $data = Namoz::all();
-    return view('admin.shownamoz', compact('data', $data));
+    return view('admin.shownamoz', compact('data'));
 }
 
 public function editnamoz($id){

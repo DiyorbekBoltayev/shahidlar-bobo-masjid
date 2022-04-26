@@ -123,8 +123,8 @@
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://youtu.be/SMhc8SftOPw" target="_blank">
-                            <span class="mbr-iconfont socicon-youtube socicon"></span>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <span class="mbr-iconfont socicon-youtube"></span>
                         </a>
                     </div>
                     <div class="soc-item">

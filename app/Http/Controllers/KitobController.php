@@ -13,9 +13,11 @@ class KitobController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    /////////////////////////////////////////////
     public function index()
     {
- return view('admin.kitoblar.index');
+      return view('admin.kitoblar.index');
     }
 
     /**
@@ -23,6 +25,9 @@ class KitobController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    /////////////////////////////////////////////
     public function create(Request $request)
     {
 
@@ -42,7 +47,9 @@ class KitobController extends Controller
         $data->file=$bookname;
 
         $data->save();
-        return redirect(route('showbook'));
+
+        $dat=Kitob::all();
+        return  view('admin.kitoblar.showbook',compact('dat'));
     }
 
     /**
@@ -52,6 +59,7 @@ class KitobController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    /////////////////////////////////////////////
     public function store(Request $request)
     {
       $dat=Kitob::all();
@@ -64,13 +72,13 @@ class KitobController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    /////////////////////////////////////////////
     public function show($id)
     {
 
         $data = Kitob::find($id);
-
         return view('admin.kitoblar.editbook', compact('data'));
-
 
     }
 
@@ -85,6 +93,8 @@ class KitobController extends Controller
         //
     }
 
+
+
     /**
      * Update the specified resource in storage.
      *
@@ -92,9 +102,35 @@ class KitobController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
+    /////////////////////////////////////////////
     public function update(Request $request, $id)
     {
-        //
+        $data = Kitob::find($id);
+
+        $data->nomi=$request->nomi;
+        $data->avtor=$request->muallifi;
+
+        if($request->rasm !=null){
+            $image=$request->rasm;
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+            $request->rasm->move('newsimage',$imagename);
+            $data->rasm=$imagename;
+        }
+
+        if($request->kitob !=null){
+
+            $book=$request->kitob;
+            $bookname=time().'.'.$book->getClientOriginalExtension();
+            $request->kitob->move('bookimage',$bookname);
+            $data->file=$bookname;
+        }
+
+        $data->save();
+        $dat=Kitob::all();
+        return  view('admin.kitoblar.showbook',compact('dat'));
+
     }
 
     /**
@@ -103,6 +139,8 @@ class KitobController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function destroy($id)
     {
         $data=Kitob::find($id);
@@ -112,10 +150,10 @@ class KitobController extends Controller
         return  view('admin.kitoblar.showbook',compact('dat'));
     }
 
+
     public function kitoblar()
     {
         $data = Kitob::paginate(8);
-
         return view('user.kitoblar',compact('data'));
     }
 
