@@ -105,13 +105,13 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
-                    <strong> Yordam </strong>
+                    <strong> Menu </strong>
                 </h5>
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap">Help Center</li>
-                    <li class="mbr-text item-wrap">Mobirise Forums</li>
-                    <li class="mbr-text item-wrap">Mobirise Kit</li>
-                    <li class="mbr-text item-wrap">Our site</li>
+                    <a href="{{url('/ehson')}}">
+                        <li class="mbr-text item-wrap">Ehson Qilish</li> </a>
+                    <a href="{{url('/yangiliklar')}}"><li class="mbr-text item-wrap">Yangiliklar</li></a>
+
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
                     <strong> Biz bilan bog`laning </strong>
@@ -145,11 +145,8 @@
                 </h5>
 
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap">Code Editor</li>
-                    <li class="mbr-text item-wrap">Form Builder</li>
-                    <li class="mbr-text item-wrap">Popup Builder</li>
-                    <li class="mbr-text item-wrap">Enterprise</li>
-
+                    <a href="{{url('/maqola')}}"><li class="mbr-text item-wrap">Maqolalar</li></a>
+                    <a href="{{url('/kitoblar')}}"><li class="mbr-text item-wrap">Kitoblar</li></a>
                 </ul>
                 <a href="{{route('adminmi')}}" class="btn btn-primary"> Admin sifatida kirish</a>
             </div>
