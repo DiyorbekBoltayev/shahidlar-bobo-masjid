@@ -106,7 +106,7 @@
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
                     <strong>Biz haqimizda </strong>
                 </h5>
-                <p class="mbr-text mbr-fonts-style mb-4 display-4">
+                <p class="mbr-text mbr-fonts-style mb-4 text-white display-4">
                     Хоразм вилояти Урганч тумани Қиёт махалласи. Мулжал: Пахтакор коллежи, "Шаҳид бобо" масжиди қурилиши гуруҳи:
                     Шахид бобо масжиди
                     Агробанк Коровул филиали
@@ -122,8 +122,8 @@
                 </h5>
                 <ul class="list mbr-fonts-style display-4">
                     <a href="{{url('/ehson')}}">
-                        <li class="mbr-text item-wrap">Ehson Qilish</li> </a>
-                    <a href="{{url('/yangiliklar')}}"><li class="mbr-text item-wrap">Yangiliklar</li></a>
+                        <li class="mbr-text text-info item-wrap">Ehson Qilish</li> </a>
+                    <a href="{{url('/yangiliklar')}}"><li class="mbr-text text-info item-wrap">Yangiliklar</li></a>
 
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
@@ -158,8 +158,8 @@
                 </h5>
 
                 <ul class="list mbr-fonts-style display-4">
-                    <a href="{{url('/maqola')}}"><li class="mbr-text item-wrap">Maqolalar</li></a>
-                    <a href="{{url('/kitoblar')}}"><li class="mbr-text item-wrap">Kitoblar</li></a>
+                    <a href="{{url('/maqola')}}"><li class="mbr-text text-info item-wrap">Maqolalar</li></a>
+                    <a href="{{url('/kitoblar')}}"><li class="mbr-text text-info item-wrap">Kitoblar</li></a>
                 </ul>
                 <a href="{{route('adminmi')}}" class="btn btn-primary"> Admin sifatida kirish</a>
             </div>
