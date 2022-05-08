@@ -73,6 +73,9 @@ Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsi
 Route::get('/gallery',function (){
     return view('user.gallery');
 });
+Route::get('/video',function (){
+    return view('user.video');
+});
 
 
 

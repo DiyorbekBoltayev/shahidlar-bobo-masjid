@@ -62,8 +62,8 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Foto galereya</a>
-                                <a class="dropdown-item" href="#">Video galereya</a>
+                                <a class="dropdown-item" href="/gallery">Foto galereya</a>
+                                <a class="dropdown-item" href="/video">Video galereya</a>
 
                             </div>
                         </div>
