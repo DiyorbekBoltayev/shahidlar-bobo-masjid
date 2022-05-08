@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{asset('/assets/socicon/css/styles.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/theme/css/style.css')}}">
     <link rel="preload" as="style" href="{{asset('/assets/mobirise/css/mbr-additional.css')}}"><link rel="stylesheet" href="{{asset('/assets/mobirise/css/mbr-additional.css')}}" type="text/css">
-
+     @yield('style')
 
 
 
@@ -51,21 +51,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="{{url('/ehson')}}">Ehson qilish</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="{{url('/yangiliklar')}}">Yangiliklar</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="{{url('/maqola')}}">Maqolalar</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="{{url('/kitoblar')}}">Kitoblar</a></li>
+                    <li class="nav-item" style="margin-right: -10px; margin-left: -10px;"><a class="nav-link link text-black text-primary display-4" href="{{url('/ehson')}}">Ehson qilish</a></li>
+                    <li class="nav-item" style="margin-right: -10px; margin-left: -10px;"><a class="nav-link link text-black text-primary display-4" href="{{url('/yangiliklar')}}">Yangiliklar</a></li>
+                    <li class="nav-item" style="margin-right: -10px; margin-left: -10px;"><a class="nav-link link text-black text-primary display-4" href="{{url('/maqola')}}">Maqolalar</a></li>
+                    <li class="nav-item" style="margin-right: -10px; margin-left: -10px;"><a class="nav-link link text-black text-primary display-4" href="{{url('/kitoblar')}}">Kitoblar</a></li>
+                    <li class="nav-item" style="margin-right: -10px; margin-left: -10px;">
+                        <div class="dropdown">
+                            <a class="nav-link link text-black text-primary display-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                               Galereya
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Foto galereya</a>
+                                <a class="dropdown-item" href="#">Video galereya</a>
+
+                            </div>
+                        </div>
+                        </li>
                 </ul>
 
                 <div class="icons-menu">
                     <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-youtube socicon"></span>
+                        <span style="color: red;" class="p-2 mbr-iconfont socicon-youtube socicon"></span>
                     </a>
                     <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-telegram socicon"></span>
+                        <span style="color: #73bdff" class="p-2 mbr-iconfont socicon-telegram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
+                    <a class="iconfont-wrapper"  href="https://t.me/shahidlarbobo" target="_blank">
+                        <span style="color: #de4606" class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
 
                 </div>
@@ -78,7 +91,7 @@
 @yield('content')
 
 
-<section class="footer4 cid-t2SUykaqip" once="footers" id="footer4-m">
+<section class="footer4 cid-t2SUykaqip text-white" once="footers" id="footer4-m">
 
     <div class="container">
         <div class="row mbr-white">

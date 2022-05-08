@@ -70,6 +70,10 @@ Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsond
 Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle');
 
 
+Route::get('/gallery',function (){
+    return view('user.gallery');
+});
+
 
 
 //////////////////////////////////////
