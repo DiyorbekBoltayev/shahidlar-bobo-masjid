@@ -55,15 +55,15 @@
 {{--                        <p>Maqola qo'shish</p>--}}
 {{--                    </a>--}}
 {{--                </li>--}}
-                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
-                    <a href="">
-                        <i class="fas fa-bookmark"></i>
+                <li class="nav-item {{  request()->routeIs('photo') ? 'active' : '' }}">
+                    <a href="{{url('photo')}}">
+                        <i class="fas flaticon-photo-camera"></i>
                         <p>Rasm</p>
                     </a>
                 </li>
                 <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
                     <a href="">
-                        <i class="fas fa-bookmark"></i>
+                        <i class="fas fa-video"></i>
                         <p>Video</p>
                     </a>
                 </li>
