@@ -11,7 +11,7 @@
     </style>
     <div class=" container ">
 
-
+        <a href="{{url('addbook')}}" class="btn btn-primary float-right mb-3"><i class="fas fa-plus"></i>Kitob qo'shish</a>
         <table class="table table-bordered border-primary ">
             <tr>
                 <th>ID</th>
@@ -23,10 +23,10 @@
 
             </tr>
 
-            @foreach($dat as $d)
+            @foreach($dat as $k=>$d)
 
                 <tr>
-                    <td>{{$d->id}}</td>
+                    <td>{{$k}}</td>
                     <td id="td">{{$d->nomi}}</td>
 
                     <td id="td">{{$d->avtor}}</td>
