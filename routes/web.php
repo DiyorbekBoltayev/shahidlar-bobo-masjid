@@ -79,6 +79,7 @@ Route::get('/video',function (){
 
 
 
+
 //////////////////////////////////////
 Route::get('/addbook',[KitobController::class,'index']);
 Route::post('/sendbooks',[KitobController::class,'create']);
