@@ -1,8 +1,7 @@
 @extends('admin.master')
 @section('content')
-    <h1 class="text text-primary">Ehsonlar</h1>
-    <div class="container " >
-        <a href="{{route('addehson')}}" class="btn btn-primary float-right mb-3"><i class="fas fa-plus"></i>Ehson qo'shish</a>
+
+    <a href="{{route('addehson')}}" class="btn btn-primary float-right mb-3"><i class="fas fa-plus"></i>Ehson qo'shish</a>
         <table class="table table-bordered table-striped border-primary">
             <tr class="">
                 <th>T/R</th>
@@ -24,4 +23,5 @@
             @endforeach
         </table>
     </div>
+
 @endsection
