@@ -44,14 +44,20 @@ class VideoController extends Controller
         $url = $request->url;
         $youtube = "https://www.youtube.com/embed/";
 
+        $url = $request->url;
+        $ss="";
+        $youtube = "https://www.youtube.com/embed/";
         for ( $i = strlen($url)-1; $i>0; $i-- ){
             if ($url[$i]=='/'){
                 break;
             }
-            $youtube.=$url[$i];
+            $ss=$url[$i].$ss;
+
         }
+        $youtube.=$ss;
 
         $data->url = $youtube;
+
         $data->save();
 
         return redirect(url('video'));
@@ -65,7 +71,15 @@ class VideoController extends Controller
      */
     public function show($id)
     {
-        //
+       //
+    }
+
+    public function showw()
+    {
+        $data = Video::paginate(4);
+        return view('user.video',[
+            'data'=>$data
+        ]);
     }
 
     /**
@@ -97,7 +111,19 @@ class VideoController extends Controller
         $videos->name = $request->name;
         if ($request->url != null) {
 
-            $videos->url = $request->url;
+            $url = $request->url;
+            $ss="";
+            $youtube = "https://www.youtube.com/embed/";
+            for ( $i = strlen($url)-1; $i>0; $i-- ){
+                if ($url[$i]=='/'){
+                    break;
+                }
+                $ss=$url[$i].$ss;
+
+            }
+            $youtube.=$ss;
+
+            $videos->url = $youtube;
 
         }
         $videos->save();

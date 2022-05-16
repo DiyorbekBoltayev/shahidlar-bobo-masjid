@@ -73,9 +73,6 @@ Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsi
 Route::get('/gallery',function (){
     return view('user.gallery');
 });
-Route::get('/video',function (){
-    return view('user.video');
-});
 
 
 
@@ -93,3 +90,4 @@ Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla
 
 ///////////////////////////////
 Route::resource('video',\App\Http\Controllers\VideoController::class);
+Route::get('videos',[\App\Http\Controllers\VideoController::class,'showw']);
