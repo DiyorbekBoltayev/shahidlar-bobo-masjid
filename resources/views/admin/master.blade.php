@@ -68,8 +68,16 @@
 
             <div class="page-inner py-5">
 {{--                @include('alerts')--}}
-                @yield('content')
+                <div class="col-md-12">
+                    <div class="card">
 
+
+                            <div class="card-body">
+                @yield('content')
+                            </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
         </div>

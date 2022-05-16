@@ -21,7 +21,7 @@
 
     <div class=" container ">
         <h1 class="text text-center"> Barcha maqolalar</h1>
-
+        <a href="{{route('addmaqola')}}" class="btn btn-primary float-right mb-3"><i class="fas fa-plus"></i>Maqola qo'shish</a>
         <table class="table table-bordered border-primary ">
             <tr>
                 <th>T/R</th>
