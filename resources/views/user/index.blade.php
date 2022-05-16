@@ -63,16 +63,18 @@
     </section>
 
 
-
+    @if($dat)
     <section class="image2 cid-t2Tpcrw4DS" id="image2-15">
 
 
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
+
                         <div class="image-wrapper">
                             <img src="/maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
                         </div>
+
                     </div>
                     <div class="col-12 col-lg">
 
@@ -87,8 +89,8 @@
             </div>
 
 
-
     </section>
+        @endif
 
 
 
@@ -125,7 +127,7 @@
     </section>
 
 
-    <section class="map1 cid-t34f2JGzn4" id="map1-2n">
+    <section class="map1 cid-t34f2JGzn4 m-4" id="map1-2n">
 
         <div class="container">
             <div class="mbr-section-head mb-4">
