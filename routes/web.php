@@ -92,4 +92,4 @@ Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla
 
 
 ///////////////////////////////
-Route::resource('/video',\App\Http\Controllers\VideoController::class);
+Route::resource('video',\App\Http\Controllers\VideoController::class);

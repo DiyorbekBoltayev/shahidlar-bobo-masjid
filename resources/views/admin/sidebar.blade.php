@@ -2,18 +2,28 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <ul class="nav nav-primary">
+
+                <li class="nav-item {{  request()->routeIs('shownamoz') ? 'active' : '' }}">
+                    <a href="{{route('shownamoz')}}">
+                        <i class="fas fa-clock"></i>
+                        <p>Namoz Vaqti </p>
+                    </a>
+                </li>
+
                 <li class="nav-item {{  request()->routeIs('ehsonlar') ? 'active' : '' }}">
                     <a href="{{route('ehsonlar')}}">
                         <i class="fas fa-envelope"></i>
                         <p>Ehsonlar ro'yhati</p>
                     </a>
                 </li>
+
 {{--                <li class="nav-item {{  request()->routeIs('addehson') ? 'active' : '' }}">--}}
 {{--                    <a href="{{route('addehson')}}">--}}
 {{--                        <i class="fas fa-envelope"></i>--}}
 {{--                        <p>Ehson qo'shish</p>--}}
 {{--                    </a>--}}
 {{--                </li>--}}
+
                 <li class="nav-item {{ request()->routeIs('shownews') ? 'active' : '' }} ">
                     <a href="{{route('shownews')}}">
                         <i class="fas fa-pen-square"></i>
@@ -61,20 +71,13 @@
                         <p>Rasm</p>
                     </a>
                 </li>
-                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
-                    <a href="">
+
+                <li class="nav-item {{  request()->routeIs('video.index') ? 'active' : '' }}">
+                    <a href="{{url('video')}}">
                         <i class="fas fa-bookmark"></i>
                         <p>Video</p>
                     </a>
                 </li>
-
-                <li class="nav-item {{  request()->routeIs('shownamoz') ? 'active' : '' }}">
-                    <a href="{{route('shownamoz')}}">
-                        <i class="fas fa-clock"></i>
-                        <p>Namoz Vaqti </p>
-                    </a>
-                </li>
-
 
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <a href="{{url('/')}}">
