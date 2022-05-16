@@ -3,7 +3,7 @@
 
 <div class="container-fluid page-body-wrapper">
 
-    <div class="container" align="center" >
+    <div class="container"  style="background: #ebedf2" >
 
         @if(session()->has('xabar'))
 
@@ -20,29 +20,31 @@
         <form action="{{url('sendnews')}}" method="post" enctype="multipart/form-data">
             @csrf
             <h1 class="title"> Yangilik qo'shish</h1>
+            <div class="w-100">
 
-            <div class="div" style="padding: 20px;">
-                <label> Mavzusi </label>
-                <input class="form-control w-50 text-black"  type="text" name="mavzu" placeholder=" Yangilik mavzusi.." required="">
+                <div class="form-floating mb-3">
+                    <label class="text text-primary" for="floatingInput1">Mavzusi </label>
+                    <input type="text" name="mavzu" class="form-control" id="floatingInput1" required placeholder="Yangilik mavzusi...">
+                </div>
+
+            <div class="form-floating mb-3" >
+                <label class="text text-primary" for="floatingInput1">Matni </label>
+                <textarea name="matn" class="form-control text-black" id="floatingInput1" placeholder="Yangilik matni.." ></textarea>
+
             </div>
 
-            <div class="div" style="padding: 20px;">
-                <label> Matni </label>
-                <textarea name="matn" class="form-control text-black w-50" placeholder="Yangilik matni.." ></textarea>
 
-            </div>
-
-            <div class="div" style="padding: 20px;">
+            <div class="form-floating mb-3" >
                 <label for="exampleInputPassword1" class="form-label">Rasmni tanlang</label>
-                <input type="file" name="rasm" class="form-control w-50 text-black">
+                <input type="file" name="rasm" class="form-control  text-black">
             </div>
 
-            <div class="div" style="padding: 20px;">
+            <div class="form-floating mb-3" >
 
-                <button class="btn btn-primary " type="submit" name="submit" > Qo'shish </button>
+                <button class="btn btn-primary  form-control" type="submit" name="submit" > Qo'shish </button>
 
             </div>
-
+            </div>
         </form>
 
     </div>
