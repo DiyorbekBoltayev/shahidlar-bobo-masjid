@@ -87,5 +87,3 @@ Route::get('/editbook/{id}',[KitobController::class,'show']);
 Route::get('/deletebook/{id}',[KitobController::class,'destroy']);
 Route::post('/updatebook{id}',[KitobController::class,'update'])->name('updatebook');
 Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla');
-
-

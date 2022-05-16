@@ -14,7 +14,7 @@
 
                 <div class="form-floating mb-3">
                     <label class="text text-primary" for="floatingInput1">Matini</label>
-                    <input type="text" name="matn" class="form-control" id="floatingInput1" required placeholder="Maqola matni..">
+                    <textarea name="matn" class="form-control" id="floatingInput1" required placeholder="Maqola matni.." cols="30" rows="10"></textarea>
                 </div>
 
                 <div class="form-floating mb-3">

@@ -1,3 +1,4 @@
+
 @extends('user.master')
 @section('style')
     <style>
@@ -122,6 +123,8 @@
         </div>
     </div>
 @endsection
+
+
 @section('script')
     <script>
         $(document).ready(function(){
