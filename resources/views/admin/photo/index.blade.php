@@ -22,13 +22,14 @@
     <div class=" container ">
         <h1 class="text text-center"> Barcha rasmlar</h1>
 
-        <a href="" class="btn btn-primary m-3">Rasm Qo'shish</a>
+        <a href="{{url('photocreate')}}" class="btn btn-primary float-right mb-3"><i class="fas fa-plus"></i> Rasm qo'shish</a>
 
         <table class="table table-bordered border-primary ">
             <tr>
                 <th>#</th>
                 <th id="th">Name</th>
                 <th> Rasm </th>
+                <th>Harakatlar</th>
 
             </tr>
             @foreach($data as $d)
@@ -36,13 +37,13 @@
                 <tr>
                     <td>{{$d->id}}</td>
                     <td id="td">{{$d->name}}</td>
-
-                        <img style="width: 100px; height: 100px;" src="photo/{{$d->rasm}}" alt="">
+                    <td>
+                        <img style="width: 100px; height: 100px;" src="photo/{{$d->photo}}" alt="">
                     </td>
                     <td>
-                        <a href="{{url('photo.edit',$d->id)}}"> <button class="btn btn-warning">Tahrirlash</button></a>
+                        <a href="{{url('photoedit',$d->id)}}"> <button class="btn btn-warning">Tahrirlash</button></a>
 
-                        <a href="{{url('photodestroy',$d->id)}}"> <button class="btn btn-danger">O'chirish</button></a>
+                        <a href="{{url('photodelete',$d->id)}}"> <button class="btn btn-danger">O'chirish</button></a>
 
                     </td>
                 </tr>
