@@ -7,6 +7,7 @@ use App\Http\Controllers\MaqolaController;
 use App\Http\Controllers\EhsonController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\FayzullaController;
+use App\Http\Controllers\ImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,4 +95,13 @@ Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla
 ///////////////////////////////
 Route::resource('/video',\App\Http\Controllers\VideoController::class);
 //////////////////////////////
-Route::resource('/photo',\App\Http\Controllers\ImageController::class);
+
+Route::get('/photoindex',[ImageController::class,'index'])->name('index');
+Route::get('/photocreate',[ImageController::class,'create'])->name('create');
+Route::post('/photostore',[ImageController::class,'store'])->name('store');
+Route::get('/photoedit/{id}',[ImageController::class,'edit']);
+Route::post('/photoupdate/{id}',[ImageController::class,'update']);
+Route::get('/photodelete/{id}',[ImageController::class,'destroy']);
+/////////////////////////////////////
+Route::get('/userphoto',[ImageController::class,'user']);
+

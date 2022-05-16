@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Photo;
+use App\Models\Image;
 use Illuminate\Http\Request;
 use PHPUnit\TextUI\XmlConfiguration\Php;
 
@@ -15,7 +15,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        $data=Photo::all();
+        $data=Image::all();
         return view('admin.photo.index',compact('data'));
     }
 
@@ -26,7 +26,7 @@ class ImageController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.photo.create');
     }
 
     /**
@@ -37,7 +37,14 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new Image();
+        $data->name=$request->name;
+        $image=$request->photo;
+        $imagename=time().'.'.$image->getClientOriginalExtension();
+        $request->photo->move('photo',$imagename);
+        $data->photo=$imagename;
+        $data->save();
+        return redirect(url('photoindex'));
     }
 
     /**
@@ -59,7 +66,9 @@ class ImageController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Image::find($id);
+        return view('admin.photo.edit',compact('data'));
+
     }
 
     /**
@@ -71,7 +80,16 @@ class ImageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data =  Image::find($id);
+        $data->name=$request->name;
+        if($request->photo!=null) {
+            $image = $request->photo;
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $request->photo->move('photo', $imagename);
+            $data->photo = $imagename;
+        }
+        $data->save();
+        return redirect(url('photoindex'));
     }
 
     /**
@@ -82,6 +100,14 @@ class ImageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data =  Image::find($id);
+        $data->delete();
+
+        return redirect(url('photoindex'));
+    }
+
+    public function user(){
+        $data=Image::all();
+        return view('user.gallery',compact('data'));
     }
 }

@@ -56,7 +56,7 @@
 {{--                    </a>--}}
 {{--                </li>--}}
                 <li class="nav-item {{  request()->routeIs('photo.index') ? 'active' : '' }}">
-                    <a href="{{route('photo.index')}}">
+                    <a href="{{url('photoindex')}}">
                         <i class="fas flaticon-photo-camera"></i>
                         <p>Rasm</p>
                     </a>
