@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Video;
+use App\Models\VidoModel;
 use Illuminate\Http\Request;
 
 class VideoController extends Controller
@@ -13,7 +15,8 @@ class VideoController extends Controller
      */
     public function index()
     {
-        return view('admin.videos.index');
+        $data = Video::paginate(4);
+        return view('admin.videos.index',[ 'data' => $data ]);
     }
 
     /**
@@ -23,7 +26,7 @@ class VideoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.videos.create');
     }
 
     /**
@@ -34,7 +37,24 @@ class VideoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $data = new Video();
+        $data->name = $request->name;
+
+        $url = $request->url;
+        $youtube = "https://www.youtube.com/embed/";
+
+        for ( $i = strlen($url)-1; $i>0; $i-- ){
+            if ($url[$i]=='/'){
+                break;
+            }
+            $youtube.=$url[$i];
+        }
+
+        $data->url = $youtube;
+        $data->save();
+
+        return redirect(url('video'));
     }
 
     /**
@@ -56,7 +76,11 @@ class VideoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $videos = Video::find($id);
+
+        return view('admin.videos.edit', [
+            'data' => $videos,
+        ]);
     }
 
     /**
@@ -68,7 +92,18 @@ class VideoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $videos = Video::find($id);
+
+        $videos->name = $request->name;
+        if ($request->url != null) {
+
+            $videos->url = $request->url;
+
+        }
+        $videos->save();
+
+        return redirect(url('video'));
+
     }
 
     /**
@@ -79,6 +114,10 @@ class VideoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Video::find($id);
+        $data->delete();
+
+        return redirect(url('video'));
+
     }
 }
