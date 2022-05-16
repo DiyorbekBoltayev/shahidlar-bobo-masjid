@@ -62,8 +62,8 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/gallery">Foto galereya</a>
-                                <a class="dropdown-item" href="/video">Video galereya</a>
+                                <a class="dropdown-item" href="{{url('gallery')}}">Foto galereya</a>
+                                <a class="dropdown-item" href="{{url('video')}}">Video galereya</a>
 
                             </div>
                         </div>
@@ -97,7 +97,7 @@
         <div class="row mbr-white">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media-wrap">
-                    <a href="https://mobiri.se/">
+                    <a href="#">
                         <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise">
                     </a>
                 </div>
@@ -179,7 +179,7 @@
 <script src="{{asset('/assets/viewportchecker/jquery.viewportchecker.js')}}"></script>
 <script src="{{asset('/assets/parallax/jarallax.min.js')}}"></script>
 <script src="{{asset('/assets/theme/js/script.js')}}"></script>
-@yield('script')
+
 
 
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
