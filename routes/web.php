@@ -7,7 +7,6 @@ use App\Http\Controllers\MaqolaController;
 use App\Http\Controllers\EhsonController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\FayzullaController;
-use App\Http\Controllers\ImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,7 +51,13 @@ Route::get('/deletemaqola/{id}',[MaqolaController::class, 'destroy'])->name('del
 
 
 //////////////////////////////////////////////////////////
-Route::resource('photo',ImageController::class);
+Route::get('/addnews',[FayzullaController::class,'addnews'])->name('addnews');
+Route::post('/sendnews',[FayzullaController::class,'create'])->name('create');
+Route::get('/shownews',[FayzullaController::class,'store'])->name('shownews');
+Route::get('/edit/{id}',[FayzullaController::class,'show']);
+Route::post('/update/{id}',[FayzullaController::class,'update']);
+Route::get('/delete/{id}',[FayzullaController::class,'destroy']);
+Route::get('/yangiliksingle/{id}',[FayzullaController::class,'single']);
 
 
 //////////////////////////////////////////////////////////
@@ -86,13 +91,5 @@ Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla
 
 
 
-
-
-///////////////////////////////////////////
- Route::get('/addnews',[PhotoController::class,'addnews'])->name('addnews');
-Route::post('/sendnews',[FayzullaController::class,'create'])->name('create');
-Route::get('/shownews',[FayzullaController::class,'store'])->name('shownews');
-Route::get('/edit/{id}',[FayzullaController::class,'show']);
-Route::post('/update/{id}',[FayzullaController::class,'update']);
-Route::get('/delete/{id}',[FayzullaController::class,'destroy']);
-Route::get('/yangiliksingle/{id}',[FayzullaController::class,'single']);
+///////////////////////////////
+Route::resource('/video',\App\Http\Controllers\VideoController::class);
