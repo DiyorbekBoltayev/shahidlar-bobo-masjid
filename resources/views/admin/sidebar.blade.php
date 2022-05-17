@@ -66,15 +66,15 @@
 {{--                    </a>--}}
 {{--                </li>--}}
                 <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
-                    <a href="">
-                        <i class="fas fa-bookmark"></i>
+                    <a href="{{url('/photoindex')}}">
+                        <i class="fas flaticon-photo-camera"></i>
                         <p>Rasm</p>
                     </a>
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('video.index') ? 'active' : '' }}">
                     <a href="{{url('video')}}">
-                        <i class="fas fa-bookmark"></i>
+                        <i class="fas fa-video"></i>
                         <p>Video</p>
                     </a>
                 </li>

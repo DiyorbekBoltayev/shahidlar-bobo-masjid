@@ -9,7 +9,7 @@
 
                 <div class="form-floating mb-3">
                     <label class="text text-primary" for="floatingInput1">Nomi</label>
-                    <input type="text" name="name" class="form-control" id="floatingInput1" required placeholder="Rasm nomi..">
+                    <input type="text" name="name" class="form-control" id="floatingInput1" required value="{{old('name')}}" placeholder="Rasm nomi..">
                 </div>
 
 

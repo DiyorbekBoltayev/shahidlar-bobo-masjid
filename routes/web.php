@@ -91,3 +91,13 @@ Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla
 ///////////////////////////////
 Route::resource('video',\App\Http\Controllers\VideoController::class);
 Route::get('videos',[\App\Http\Controllers\VideoController::class,'showw']);
+
+
+
+Route::get('/photoindex',[\App\Http\Controllers\ImageController::class,'index'])->name('index');
+Route::get('/photocreate',[\App\Http\Controllers\ImageController::class,'create'])->name('create');
+Route::post('/photostore',[\App\Http\Controllers\ImageController::class,'store'])->name('store');
+Route::get('/photoedit/{id}',[\App\Http\Controllers\ImageController::class,'edit']);
+Route::post('/photoupdate/{id}',[\App\Http\Controllers\ImageController::class,'update']);
+Route::get('/photodelete/{id}',[\App\Http\Controllers\ImageController::class,'destroy']);
+Route::get('/gallery/',[\App\Http\Controllers\ImageController::class,'user']);
