@@ -8,8 +8,9 @@ use App\Models\Namoz;
 class AdminController extends Controller
 {
     public function index(){
-        $data=Ehson::all();
-        return view('admin.ehsonlar.ehsonshow',['data'=>$data]);
+        $data = Namoz::all();
+        return view('admin.shownamoz', compact('data'));
+//
     }
 
 

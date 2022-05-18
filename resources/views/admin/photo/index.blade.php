@@ -54,42 +54,22 @@
         <br>
     </div>
 
+    <div class="container">
+        <div class="row justify-content-center">
 
-    {{--    <h1 class="text text-center"> Barcha maqolalar</h1>--}}
 
-    {{--    <div  class="container" align="center">--}}
+            @if ($data->links())
+                <div class="mt-4 p-4 box has-text-centered">
+                    {{ $data->links() }}
+                </div>
+            @endif
 
-    {{--        <table class="w-75" style="border: 1px solid gray">--}}
-    {{--            <tr style="background-color: gray; align-items: center;border: 1px solid gray">--}}
-    {{--                <th style="padding: 20px; ">T/R</th>--}}
-    {{--                <th class="text-wrap w-50" style="padding: 20px; ">Mavzu</th>--}}
-    {{--                <th style="padding: 20px; ">Matni</th>--}}
-    {{--                <th style="padding: 20px; ">Autor</th>--}}
-    {{--                <th style="padding: 20px; ">Rasmi</th>--}}
-    {{--                <th style="padding: 20px; ">Amallar</th>--}}
-    {{--            </tr>--}}
 
-    {{--            @foreach($data as $data)--}}
+        </div>
+    </div>
 
-    {{--                <tr style="border: 1px solid gray;">--}}
-    {{--                    <td style="padding: 20px; border: 1px solid gray;" >{{$data->id}}</td>--}}
-    {{--                    <td class="text-wrap w-50" style="padding: 20px; border: 1px solid gray; " >{{$data->mavzu}}</td>--}}
-    {{--                    <td class="text-wrap w-50" style="padding: 20px; border: 1px solid gray; " >{{$data->matn}}</td>--}}
-    {{--                    <td class="text-wrap w-50" style="padding: 20px; border: 1px solid gray; " >{{$data->autor}}</td>--}}
-    {{--                    <td style="padding: 20px; border: 1px solid gray; " >--}}
-    {{--                        <img style="width: 100px; height: 100px;" src="maqola_rasm/{{$data->rasm}}" alt="">--}}
-    {{--                    </td>--}}
-    {{--                    <td style="padding: 20px;" >--}}
-    {{--                        <a class="btn btn-success" href="{{url('editmaqola',$data->id)}}">Yangilash</a>--}}
-    {{--                        <a class="btn btn-danger" href="{{url('deletemaqola',$data->id)}}">O'chirish</a>--}}
-    {{--                    </td>--}}
-    {{--                </tr>--}}
 
-    {{--            @endforeach--}}
 
-    {{--        </table>--}}
-
-    {{--    </div>--}}
 
 
 @endsection

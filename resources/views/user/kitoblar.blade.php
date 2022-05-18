@@ -10,7 +10,7 @@
             <div class="mbr-section-head">
                 <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                     <strong> Bizdagi barcha kitoblar </strong></h4>
-                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Bemalol yuklab olishingiz mumkin </h5>
+
             </div>
 
 
