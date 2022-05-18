@@ -29,7 +29,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-4">
                         <div class="image-wrapper">
-                            <img src="/imgehson/{{$d->img}}" alt="rasm">
+                            <img style="width: 200px; height: 200px;" src="/imgehson/{{$d->img}}" alt="rasm">
                         </div>
                     </div>
                     <div class="col-12 col-md">

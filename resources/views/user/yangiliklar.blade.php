@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="image-wrapper">
-                            <img src="/newsimage/{{$da->rasm}}" alt="Mobirise">
+                            <img style="width: 300px; height: 300px; " src="/newsimage/{{$da->rasm}}" alt="Mobirise">
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="image-wrapper">
-                            <img src="/newsimage/{{$da->rasm}}" alt="Mobirise">
+                            <img  style="width: 300px; height: 300px; " src="/newsimage/{{$da->rasm}}" alt="Mobirise">
                         </div>
                     </div>
                     <div class="col-12 col-lg">

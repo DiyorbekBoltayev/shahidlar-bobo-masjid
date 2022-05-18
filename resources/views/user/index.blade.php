@@ -72,7 +72,7 @@
                     <div class="col-12 col-lg-6">
 
                         <div class="image-wrapper">
-                            <img src="/maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
+                            <img style="width: 400px; height: 500px;" src="/maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
                         </div>
 
                     </div>
