@@ -99,7 +99,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media-wrap">
                     <a href="#">
-                        <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise">
+                        <img src="{{asset('/shahidbobo.jpg')}}" alt="Logo">
                     </a>
                 </div>
             </div>
@@ -108,12 +108,12 @@
                     <strong>Biz haqimizda </strong>
                 </h5>
                 <p class="mbr-text mbr-fonts-style mb-4 text-white display-4">
-                    Хоразм вилояти Урганч тумани Қиёт махалласи. Мулжал: Пахтакор коллежи, "Шаҳид бобо" масжиди қурилиши гуруҳи:
-                    Шахид бобо масжиди
-                    Агробанк Коровул филиали
-                    Х/р 20212000303998404001
-                    МФО:00569
-                    СТИР:202877096
+                    Xorazm viloyati Urganch tumani Qiyot maxallasi. Mo'ljal: Paxtakor kolleji, "Shahid bobo" masjidi qurilishi guruhi:
+                    Shahid bobo masjidi
+                    Agrobank Qorovul filiali
+                    X/r 20212000303998404001
+                    MFO:00569
+                    STIR:202877096
                 </p>
 
             </div>
@@ -123,8 +123,9 @@
                 </h5>
                 <ul class="list mbr-fonts-style display-4">
                     <a href="{{url('/ehson')}}">
-                        <li class="mbr-text text-info item-wrap">Ehson Qilish</li> </a>
+                        <li class="mbr-text text-info item-wrap">Ehson qilish</li> </a>
                     <a href="{{url('/yangiliklar')}}"><li class="mbr-text text-info item-wrap">Yangiliklar</li></a>
+                    <a href="{{url('/maqola')}}"><li class="mbr-text text-info item-wrap">Maqolalar</li></a>
 
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
@@ -133,32 +134,34 @@
                 <div class="social-row display-7">
 
                     <div class="soc-item">
-                        <a href="https://www.youtube.com" target="_blank">
-                            <span class="mbr-iconfont socicon-youtube"></span>
+                        <a href="https://www.youtube.com" >
+                            <span class="mbr-iconfont socicon-youtube" style="color: red"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://www.instagram.com/shahid_bobo_masjidi/" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-instagram"></span>
+                        <a href="https://www.instagram.com/shahid_bobo_masjidi/" >
+                            <span class="mbr-iconfont socicon socicon-instagram" style="color:orangered "></span>
                         </a>
                     </div>
                     <div class="soc-item">
                         <a href="https://t.me/shahidlarbobo" target="_blank">
-                            <span class="mbr-iconfont socicon-telegram socicon"></span>
+                            <span class="mbr-iconfont socicon-telegram socicon" style="color: #1d7af3"></span>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
-                    <strong>Mobirise Extensions</strong>
+                    <strong>Menu</strong>
                 </h5>
 
                 <ul class="list mbr-fonts-style display-4">
-                    <a href="{{url('/maqola')}}"><li class="mbr-text text-info item-wrap">Maqolalar</li></a>
+
                     <a href="{{url('/kitoblar')}}"><li class="mbr-text text-info item-wrap">Kitoblar</li></a>
+                    <a href="{{url('/gallery')}}"><li class="mbr-text text-info item-wrap">Foto galereya</li></a>
+                    <a href="{{url('/videos')}}"><li class="mbr-text text-info item-wrap">Video galereya</li></a>
                 </ul>
-                <a href="{{route('adminmi')}}" class="btn btn-primary"> Admin sifatida kirish</a>
+                <a href="{{route('adminmi')}}" class="btn btn-primary " style="margin-left: -2px;">  Admin sifatida kirish</a>
             </div>
         </div>
     </div>
@@ -177,7 +180,8 @@
 <script src="{{asset('/assets/theme/js/script.js')}}"></script>
 
 @yield('script')
-<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;">
+        <i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 <input name="animation" type="hidden">
 </body>
 </html>

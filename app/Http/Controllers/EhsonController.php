@@ -24,13 +24,6 @@ class EhsonController extends Controller
         $data = Ehson::find($id);
         $data->title=$request->title;
         $data->text=$request->text;
-        $data->summa=$request->summa;
-        $data->phone=$request->phone;
-        $data->address=$request->address;
-        $data->cart_num1=$request->cart_num1;
-        if ($request->cart_num2){
-            $data->cart_num2=$request->cart_num2;
-        }
         if ($request->img!=null){
             $image=$request->img;
             $imagename=time().'.'.$image->getClientOriginalExtension();
@@ -55,13 +48,6 @@ class EhsonController extends Controller
         $data=new Ehson();
         $data->title=$request->title;
         $data->text=$request->text;
-        $data->summa=$request->summa;
-        $data->phone=$request->phone;
-        $data->address=$request->address;
-        $data->cart_num1=$request->cart_num1;
-        if ($request->cart_num2){
-            $data->cart_num2=$request->cart_num2;
-        }
         $image=$request->img;
         $imagename=time().'.'.$image->getClientOriginalExtension();
         $request->img->move('imgehson',$imagename);

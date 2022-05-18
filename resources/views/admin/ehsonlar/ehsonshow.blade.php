@@ -6,7 +6,6 @@
         <tr>
             <th>T/R</th>
             <th>Qisqa ma'lumot</th>
-            <th>Telefon raqami</th>
             <th>Rasm</th>
             <th>Amallar</th>
         </tr>
@@ -14,7 +13,6 @@
             <tr>
                 <td>{{$d->id}}</td>
                 <td>{{$d->title}}</td>
-                <td>{{$d->phone}}</td>
                 <td class="p-2"><img style="width: 90%; height: 100%;" src="/imgehson/{{$d->img}}" alt=""></td>
                 <td>
                     <a href="{{route('editehson',$d->id)}}" class="btn btn-warning">Tahrirlash</a>

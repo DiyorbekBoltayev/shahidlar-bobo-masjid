@@ -9,27 +9,6 @@
                     <label class="text text-primary" for="floatingInput1">Ehson haqida qisqacha m'lumot kiriting</label>
                     <input type="text" name="title" class="form-control" id="floatingInput1" required placeholder="Kiriting...">
                 </div>
-                <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput2">Zarur bo'lgan pul iqdorini kiriting</label>
-                    <input type="text" name="summa" class="form-control" id="floatingInput2" required placeholder="Kiriting...">
-                </div>
-                <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput3">Karta raqamini kiriting</label>
-                    <input type="text" name="cart_num1" class="form-control" id="floatingInput3" required placeholder="Kiriting...">
-                </div>
-                <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput">Qo'shimcha karta raqamini kiriting</label>
-                    <input type="text" name="cart_num2" class="form-control" id="floatingInput" placeholder="Kiriting...">
-                </div>
-                <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput">Manzilni kiriting</label>
-                    <input type="text" name="address" class="form-control" id="floatingInput" required placeholder="Kiriting...">
-                </div>
-                <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput">Telefon raqam kiriting</label>
-                    <input type="text" name="phone" class="form-control" id="floatingInput" required placeholder="Kiriting...">
-                </div>
-
                 <div class="form-floating">
                     <label class="text-primary" for="floatingTextarea2">Ehson haqida batafsil ma'lumot kiriting</label>
                     <textarea class="form-control" name="text" placeholder="Leave a comment here"  required id="floatingTextarea2" ></textarea>
