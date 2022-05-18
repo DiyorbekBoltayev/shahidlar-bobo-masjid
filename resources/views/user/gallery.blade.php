@@ -1,4 +1,3 @@
-
 @extends('user.master')
 @section('style')
     <style>
@@ -114,37 +113,6 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
-    <div class="lightbox">
-        <div class="multi-carousel">
-            <div class="multi-carousel-inner">
 
-                <div class="multi-carousel-item">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                        alt="Table Full of Spices"
-                        class="w-100"
-                    />
-                </div>
-
-            </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                tabindex="0"
-                data-mdb-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                tabindex="0"
-                data-mdb-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </div>
-    </div>
 
 @endsection

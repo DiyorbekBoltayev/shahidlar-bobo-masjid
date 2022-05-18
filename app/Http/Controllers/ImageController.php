@@ -108,7 +108,7 @@ class ImageController extends Controller
 
     public function user(){
 
-        $data = Image::orderBy('id', 'desc')->paginate(6);
+        $data = Image::orderBy('id', 'desc')->paginate(12);
 
         return view('user.gallery',compact('data'));
     }
