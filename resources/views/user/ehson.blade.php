@@ -13,11 +13,11 @@
                     <b>Masjid uchun ehson qilish:</b>
                 </p>
                 <div class="col-md-12 col-lg-12 d-flex justify-content-center mb-4 mt-4 align-items-center" >
-                    <a  href="https://indoor.click.uz/pay?id=019924&t=0" class=" btn display-4" style="  margin-left: 5%; margin-right: 5%; padding: 10px;">
+                    <a  href="https://indoor.click.uz/pay?id=019924&t=0" class=" btn btn-outline-primary  display-4" style="  margin-left: 5%; margin-right: 5%; padding: 10px;">
                         <img style="width: 170px; height: 60px;"src="https://docs.click.uz/wp-content/themes/click_help/assets/images/logo.png" src="https://camo.githubusercontent.com/c97f81e877cebd758ea17c0e3c270f955490cd3114c8d01d453d10826309181a/68747470733a2f2f63646e2e706179636f6d2e757a2f646f63756d656e746174696f6e5f6173736574732f7061796d655f30312e706e67" alt="payme orqali">
 
                     </a>
-                    <a href="https://payme.uz/fallback/merchant/?id=61fa825bb0159dc2d9e439dd" class="btn  display-4" style=" margin-left: 5%; margin-right: 5%; padding: 16px;">
+                    <a href="https://payme.uz/fallback/merchant/?id=61fa825bb0159dc2d9e439dd" class="btn btn-outline-primary  display-4" style=" margin-left: 5%; margin-right: 5%; padding: 16px;">
                         <img style="width: 170px; height: 50px;" src="https://camo.githubusercontent.com/c97f81e877cebd758ea17c0e3c270f955490cd3114c8d01d453d10826309181a/68747470733a2f2f63646e2e706179636f6d2e757a2f646f63756d656e746174696f6e5f6173736574732f7061796d655f30312e706e67" alt="click orqali">
                     </a>
                 </div>
