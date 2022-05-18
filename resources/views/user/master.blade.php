@@ -71,13 +71,13 @@
                 </ul>
 
                 <div class="icons-menu">
-                    <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
+                    <a class="iconfont-wrapper" href="https://www.youtube.com" target="_blank">
                         <span style="color: red;" class="p-2 mbr-iconfont socicon-youtube socicon"></span>
                     </a>
                     <a class="iconfont-wrapper" href="https://t.me/shahidlarbobo" target="_blank">
                         <span style="color: #73bdff" class="p-2 mbr-iconfont socicon-telegram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper"  href="https://t.me/shahidlarbobo" target="_blank">
+                    <a class="iconfont-wrapper"  href="https://www.instagram.com/shahid_bobo_masjidi/" target="_blank">
                         <span style="color: #de4606" class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
 
@@ -131,18 +131,14 @@
                     <strong> Biz bilan bog`laning </strong>
                 </h5>
                 <div class="social-row display-7">
-                    <div class="soc-item">
-                        <a href="https://t.me/shahidlarbobo" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                        </a>
-                    </div>
+
                     <div class="soc-item">
                         <a href="https://www.youtube.com" target="_blank">
                             <span class="mbr-iconfont socicon-youtube"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://t.me/shahidlarbobo" target="_blank">
+                        <a href="https://www.instagram.com/shahid_bobo_masjidi/" target="_blank">
                             <span class="mbr-iconfont socicon socicon-instagram"></span>
                         </a>
                     </div>
@@ -167,7 +163,6 @@
         </div>
     </div>
 </section>
-
 
 <script src="{{asset('/assets/web/assets/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('/assets/popper/popper.min.js')}}"></script>
