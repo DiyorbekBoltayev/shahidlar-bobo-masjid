@@ -15,7 +15,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        $data=Image::all();
+        $data=Image::orderBy('created_at', 'desc')->paginate(20);
         return view('admin.photo.index',compact('data'));
     }
 
