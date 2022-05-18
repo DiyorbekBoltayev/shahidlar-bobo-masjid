@@ -65,7 +65,7 @@
 {{--                        <p>Maqola qo'shish</p>--}}
 {{--                    </a>--}}
 {{--                </li>--}}
-                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('index') ? 'active' : '' }}">
                     <a href="{{url('/photoindex')}}">
                         <i class="fas flaticon-photo-camera"></i>
                         <p>Rasm</p>

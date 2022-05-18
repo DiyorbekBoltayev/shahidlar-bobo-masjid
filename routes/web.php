@@ -80,7 +80,7 @@ Route::get('/gallery',function (){
 //////////////////////////////////////
 Route::get('/addbook',[KitobController::class,'index']);
 Route::post('/sendbooks',[KitobController::class,'create']);
-Route::get('/showbook',[KitobController::class,'store']);
+Route::get('/showbook',[KitobController::class,'store'])->name('showbook');
 Route::get('/editbook/{id}',[KitobController::class,'show']);
 Route::get('/deletebook/{id}',[KitobController::class,'destroy']);
 Route::post('/updatebook{id}',[KitobController::class,'update'])->name('updatebook');

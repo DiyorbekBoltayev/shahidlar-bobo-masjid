@@ -63,28 +63,16 @@
 
             <div class="row">
 
-                @foreach($data as $dat)
+        @foreach($data as $dat)
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a href="/photo/{{$dat->photo}}" class="fancybox" rel="ligthbox">
                         <img  src="/photo/{{$dat->photo}}" class="zoom img-fluid "  alt="">
+
                     </a>
                 </div>
+
                 @endforeach
 
-            </div>
-
-            <div class="container">
-                <div class="row justify-content-center">
-
-
-                    @if ($data->links())
-                        <div class="mt-4 p-4 box has-text-centered">
-                            {{ $data->links() }}
-                        </div>
-                    @endif
-
-
-                </div>
             </div>
 
 
@@ -110,41 +98,6 @@
             });
         });
     </script>
-
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-    <div class="lightbox">
-        <div class="multi-carousel">
-            <div class="multi-carousel-inner">
-
-                <div class="multi-carousel-item">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                        alt="Table Full of Spices"
-                        class="w-100"
-                    />
-                </div>
-
-            </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                tabindex="0"
-                data-mdb-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                tabindex="0"
-                data-mdb-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </div>
-    </div>
 
 @endsection
