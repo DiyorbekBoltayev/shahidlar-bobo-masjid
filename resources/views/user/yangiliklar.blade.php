@@ -18,7 +18,7 @@
                             </h6>
                             <p class="mbr-text mbr-fonts-style mb-4 display-4">
                                 {{ substr($da->matn, 0,80) }}...</p>
-                            <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="{{url('yangiliksingle',$da->id)}}"><span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>Learn more</a></div>
+                            <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="{{url('yangiliksingle',$da->id)}}"><span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>Batafsil</a></div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -49,7 +49,7 @@
                                 {{ substr($da->matn, 0,80) }}...
                             </p>
                                 <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="{{url('yangiliksingle',$da->id)}}"><span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>
-                                    Learn more
+                                    Batafsil
                                 </a></div>
                         </div>
                     </div>
