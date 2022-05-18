@@ -71,6 +71,6 @@
         </div>
 
     </section>
-    <img src="/imgehson/{{$data->img}}" style="width: 80%; margin: 10px auto " alt="">
+    <img src="/imgehson/{{$data->img}}" style="max-width: 400px; max-height: 500px; margin: 10px auto " alt="Bu tasm">
 
 @endsection
