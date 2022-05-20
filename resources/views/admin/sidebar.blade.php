@@ -17,12 +17,12 @@
                     </a>
                 </li>
 
-{{--                <li class="nav-item {{  request()->routeIs('addehson') ? 'active' : '' }}">--}}
-{{--                    <a href="{{route('addehson')}}">--}}
-{{--                        <i class="fas fa-envelope"></i>--}}
-{{--                        <p>Ehson qo'shish</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{--                <li class="nav-item {{  request()->routeIs('addehson') ? 'active' : '' }}">--}}
+                {{--                    <a href="{{route('addehson')}}">--}}
+                {{--                        <i class="fas fa-envelope"></i>--}}
+                {{--                        <p>Ehson qo'shish</p>--}}
+                {{--                    </a>--}}
+                {{--                </li>--}}
 
                 <li class="nav-item {{ request()->routeIs('shownews') ? 'active' : '' }} ">
                     <a href="{{route('shownews')}}">
@@ -31,12 +31,12 @@
                     </a>
                 </li>
 
-{{--                <li class="nav-item {{ request()->routeIs('addnews') ? 'active' : '' }} ">--}}
-{{--                    <a href="{{route('addnews')}}">--}}
-{{--                        <i class="fas fa-pen-square"></i>--}}
-{{--                        <p>Yangilik qo'shish</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{--                <li class="nav-item {{ request()->routeIs('addnews') ? 'active' : '' }} ">--}}
+                {{--                    <a href="{{route('addnews')}}">--}}
+                {{--                        <i class="fas fa-pen-square"></i>--}}
+                {{--                        <p>Yangilik qo'shish</p>--}}
+                {{--                    </a>--}}
+                {{--                </li>--}}
 
                 <li class="nav-item {{  request()->routeIs('showbook') ? 'active' : '' }}">
                     <a href="{{url('showbook')}}">
@@ -45,12 +45,12 @@
                     </a>
                 </li>
 
-{{--                <li class="nav-item {{  request()->routeIs('addbook') ? 'active' : '' }}">--}}
-{{--                    <a href="{{url('addbook')}}">--}}
-{{--                        <i class="fas fa-book"></i>--}}
-{{--                        <p>Kitob qo'shish</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{--                <li class="nav-item {{  request()->routeIs('addbook') ? 'active' : '' }}">--}}
+                {{--                    <a href="{{url('addbook')}}">--}}
+                {{--                        <i class="fas fa-book"></i>--}}
+                {{--                        <p>Kitob qo'shish</p>--}}
+                {{--                    </a>--}}
+                {{--                </li>--}}
 
                 <li class="nav-item {{  request()->routeIs('maqolalar') ? 'active' : '' }}">
                     <a href="{{url('maqolalar')}}">
@@ -59,12 +59,12 @@
                     </a>
                 </li>
 
-{{--                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">--}}
-{{--                    <a href="{{route('addmaqola')}}">--}}
-{{--                        <i class="fas fa-bookmark"></i>--}}
-{{--                        <p>Maqola qo'shish</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{--                <li class="nav-item {{  request()->routeIs('addmaqola') ? 'active' : '' }}">--}}
+                {{--                    <a href="{{route('addmaqola')}}">--}}
+                {{--                        <i class="fas fa-bookmark"></i>--}}
+                {{--                        <p>Maqola qo'shish</p>--}}
+                {{--                    </a>--}}
+                {{--                </li>--}}
                 <li class="nav-item {{  request()->routeIs('index') ? 'active' : '' }}">
                     <a href="{{url('/photoindex')}}">
                         <i class="fas flaticon-photo-camera"></i>
@@ -80,10 +80,14 @@
                 </li>
 
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
-                    <a href="{{url('/')}}">
+                    <form action="{{route('logout')}}" method="post" id="form_id">
+                        @csrf
+                    <button type="submit" id="btnsub"  style="background: transparent; color: red; font-weight: 900; border: none; margin-left: 3px; " >
                         <i class="fas fa-backspace"></i>
-                        <p>Chiqish</p>
-                    </a>
+                        Chiqish
+                    </button>
+
+                    </form>
                 </li>
 
             </ul>
