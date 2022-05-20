@@ -33,8 +33,7 @@
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="#">
+                <span class="navbar-logo"><a href="/">
                         <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise" style="height: 5.9rem;">
                     </a>
                 </span>
