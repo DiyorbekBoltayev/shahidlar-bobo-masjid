@@ -39,8 +39,8 @@ Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 //////////////////////////////////////////////////////////
 Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar')->middleware('auth');
-Route::get('/maqola',[MaqolaController::class, 'indexuser'])->name('maqola')->middleware('auth');;
-Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single'])->name('maqolasingle')->middleware('auth');;
+Route::get('/maqola',[MaqolaController::class, 'indexuser'])->name('maqola');
+Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single'])->name('maqolasingle');
 Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar')->middleware('auth');;
 Route::get('/addmaqola',[MaqolaController::class, 'show'])->name('addmaqola')->middleware('auth');;
 Route::post('/uploadmaqola',[MaqolaController::class, 'create'])->name('uploadmaqola')->middleware('auth');;
@@ -67,7 +67,7 @@ Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehs
 Route::get('/editehson/{id}',[EhsonController::class,'editehson'])->name('editehson')->middleware('auth');
 Route::post('/editstore/{id}',[EhsonController::class,'editstore'])->name('editsave')->middleware('auth');
 Route::get('/ehsondelete/{id}',[EhsonController::class, 'delete'])->name('ehsondelete')->middleware('auth');
-Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle')->middleware('auth');
+Route::get('/ehsonsingle/{id}',[EhsonController::class,'single'])->name('ehsonsingle');
 
 
 Route::get('/gallery',function (){
@@ -100,7 +100,7 @@ Route::post('/photostore',[\App\Http\Controllers\ImageController::class,'store']
 Route::get('/photoedit/{id}',[\App\Http\Controllers\ImageController::class,'edit'])->middleware('auth');
 Route::post('/photoupdate/{id}',[\App\Http\Controllers\ImageController::class,'update'])->middleware('auth');
 Route::get('/photodelete/{id}',[\App\Http\Controllers\ImageController::class,'destroy'])->middleware('auth');
-Route::get('/gallery/',[\App\Http\Controllers\ImageController::class,'user'])->middleware('auth');
+Route::get('/gallery/',[\App\Http\Controllers\ImageController::class,'user']);
 
 Auth::routes([
     'register'=>false

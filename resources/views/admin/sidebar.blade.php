@@ -78,11 +78,17 @@
                         <p>Video</p>
                     </a>
                 </li>
-
+                <style> #btnsub{
+                        background: transparent; font-size: 16px; text-align: left; width: 100%; height: 50px; color: red; font-weight: 900; border: none; margin-left: 3px;
+                    }
+                #btnsub:hover{
+                    background: rgba(77, 76, 76, 0.29);
+                }
+                </style>
                 <li class="nav-item {{  request()->routeIs('admin.messages.index') ? 'active' : '' }}">
                     <form action="{{route('logout')}}" method="post" id="form_id">
                         @csrf
-                    <button type="submit" id="btnsub"  style="background: transparent; color: red; font-weight: 900; border: none; margin-left: 3px; " >
+                    <button type="submit" id="btnsub"  >
                         <i class="fas fa-backspace"></i>
                         Chiqish
                     </button>

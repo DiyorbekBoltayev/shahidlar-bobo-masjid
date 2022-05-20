@@ -160,7 +160,7 @@
                     <a href="{{url('/gallery')}}"><li class="mbr-text text-info item-wrap">Foto galereya</li></a>
                     <a href="{{url('/videos')}}"><li class="mbr-text text-info item-wrap">Video galereya</li></a>
                 </ul>
-                <a href="{{route('adminmi')}}" class="btn btn-primary " style="margin-left: -2px;">  Admin sifatida kirish</a>
+
             </div>
         </div>
     </div>
