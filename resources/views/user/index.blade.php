@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-lg-5">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Masjid uchun ehson qiling.</strong></h1>
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Masjidimiz uchun ehson qiling.</strong></h1>
 
                     <p class="mbr-text mbr-fonts-style display-7">Alloh taolo marhamat qiladi: “...va siz ehson qiling, Alloh taolo ehson qiluvchilarni yaxshi ko‘radi”. Yana bir oyatda: “Yaxshilik qiluvchilarga bu dunyoning o‘zida ham yaxshilik bor”, deyiladi.</p>
                     <div class="mbr-section-btn mt-3"><a class="btn btn-info display-4" href="{{url('/ehson')}}">Ehson qilish</a></div>
