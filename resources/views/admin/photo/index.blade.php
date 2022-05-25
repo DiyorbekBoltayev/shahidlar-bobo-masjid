@@ -1,24 +1,6 @@
 @extends('admin.master')
 @section('content')
 
-    @if(session()->has('xabar'))
-        <div id="yashirish" class="alert alert-success flex justify-between" onclick="yashir()">
-
-            {{session()->get('message')}}
-            <button type="button" class="close " data-dismiss="alert" data-target="alert"></button>
-
-        </div>
-    @endif
-
-    <style>
-        #td{
-            white-space:normal !important
-        }
-        #th{
-            white-space:normal !important
-        }
-    </style>
-
     <div class=" container ">
         <h1 class="text text-center"> Barcha rasmlar</h1>
 
@@ -28,7 +10,7 @@
             <tr>
                 <th>#</th>
                 <th id="th">Name</th>
-                <th> Rasm </th>
+                <th> Rasm</th>
                 <th>Harakatlar</th>
 
             </tr>
@@ -38,12 +20,16 @@
                     <td>{{$d->id}}</td>
                     <td id="td">{{$d->name}}</td>
                     <td>
-                        <img style="width: 100px; height: 100px;" src="photo/{{$d->photo}}" alt="">
+                        <img style="width: 100px; height: 100px;" src="/photo/{{$d->photo}}" alt="">
                     </td>
                     <td>
-                        <a href="{{url('photoedit',$d->id)}}"> <button class="btn btn-warning">Tahrirlash</button></a>
+                        <a href="{{url('photoedit',$d->id)}}">
+                            <button class="btn btn-warning">Tahrirlash</button>
+                        </a>
 
-                        <a href="{{url('photodelete',$d->id)}}"> <button class="btn btn-danger">O'chirish</button></a>
+                        <a href="{{url('photodelete',$d->id)}}">
+                            <button class="btn btn-danger">O'chirish</button>
+                        </a>
 
                     </td>
                 </tr>
@@ -67,9 +53,5 @@
 
         </div>
     </div>
-
-
-
-
 
 @endsection

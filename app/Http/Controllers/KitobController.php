@@ -128,6 +128,8 @@ class KitobController extends Controller
         }
 
         $data->save();
+
+
         $dat=Kitob::all();
         return  view('admin.kitoblar.showbook',compact('dat'));
 

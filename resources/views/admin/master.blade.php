@@ -24,6 +24,14 @@
             }
         });
     </script>
+    <style>
+        #td{
+            white-space:normal !important
+        }
+        #th{
+            white-space:normal !important
+        }
+    </style>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{asset('/asset/css/bootstrap.min.css')}}">
