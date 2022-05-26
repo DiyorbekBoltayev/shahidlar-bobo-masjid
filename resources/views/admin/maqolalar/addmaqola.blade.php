@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('content')
 
-    <div class="container" style="background: #ebedf2">
+<div class="container" >
         <h1 class="text-primary text text-center">Maqola qo'shish</h1>
         <div class="w-100">
             <form action="{{route('uploadmaqola')}}" method="post" enctype="multipart/form-data">
