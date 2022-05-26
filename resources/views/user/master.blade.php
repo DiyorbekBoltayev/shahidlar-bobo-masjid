@@ -17,7 +17,7 @@
         <meta name="description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi rasmiy web-sayti - Shahidlarbobo.uz">
         <meta name="keywords" content="Masjid,namoz,namoz vaqti, Namoz vaqti urganch,Xorazm,Shahid, Shahidlarbobo , Shahidbobo, Paxtakor,Qurilish , ehson, yangiliklar, kitob, maqola,">
         <meta property="og:title" content="Shahidlarbobo.uz -Shahidlarbobo Jome Masjidi rasmiy web-sayti">
-        <meta property="og:description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi rasmiy web-sayti - Shahidlarbobo.uz">
+        <meta property="og:description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi haqidagi yangiliklar, namoz vaqtlari,ehson qilish, maqolalar, elektron kitoblar mavjud">
         <meta property="og:type" content="website">
         <meta property="og:url" content="http://shahidlarbobo.uz/">
         <meta property="og:site_name" content="Shahidlarbobo.uz">
