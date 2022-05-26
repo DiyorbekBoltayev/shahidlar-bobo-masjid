@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  >
+<html lang="uz">
 <head>
     <!-- Site made with Mobirise Website Builder v5.0.29, https://mobirise.com -->
     <meta charset="UTF-8">
@@ -7,10 +7,23 @@
     <meta name="generator" content="Mobirise v5.0.29, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="{{asset('/assets/images/mbr-107x107.png')}}" type="image/x-icon">
-    <meta name="description" content="">
 
+        <meta name="author" content="AmuSoft.uz">
+        <meta name="theme-color" content="#000">
+        <meta name="msapplication-navbutton-color" content="#000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+        <title>Shahidlarbobo Jome Masjidi</title>
 
-    <title>Masjid</title>
+        <meta name="description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi rasmiy web-sayti - Shahidlarbobo.uz">
+        <meta name="keywords" content="Masjid,namoz,namoz vaqti, Namoz vaqti urganch,Xorazm,Shahid, Shahidlarbobo , Shahidbobo, Paxtakor,Qurilish , ehson, yangiliklar, kitob, maqola,">
+        <meta property="og:title" content="Shahidlarbobo.uz -Shahidlarbobo Jome Masjidi rasmiy web-sayti">
+        <meta property="og:description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi rasmiy web-sayti - Shahidlarbobo.uz">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://shahidlarbobo.uz/">
+        <meta property="og:site_name" content="Shahidlarbobo.uz">
+    <meta property="og:image" content="{{asset('/shahidbobo.jpg')}}" />
+    <meta name="telegram:group" content="https://t.me/shahidlarbobo" />
+
     <link rel="stylesheet" href="{{asset('/assets/tether/tether.min.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/bootstrap/css/bootstrap-grid.min.css')}}">
