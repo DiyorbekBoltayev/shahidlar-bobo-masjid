@@ -9,9 +9,6 @@
     <link rel="shortcut icon" href="{{asset('/assets/images/mbr-107x107.png')}}" type="image/x-icon">
 
         <meta name="author" content="AmuSoft.uz">
-        <meta name="theme-color" content="#000">
-        <meta name="msapplication-navbutton-color" content="#000">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#000">
         <title>Shahidlarbobo Jome Masjidi</title>
 
         <meta name="description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi rasmiy web-sayti - Shahidlarbobo.uz">
@@ -19,7 +16,7 @@
         <meta property="og:title" content="Shahidlarbobo.uz -Shahidlarbobo Jome Masjidi rasmiy web-sayti">
         <meta property="og:description" content="Xorazm viloyati Urganch tumani Shahidlarbobo Jome Masjidi haqidagi yangiliklar, namoz vaqtlari,ehson qilish, maqolalar, elektron kitoblar mavjud">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://shahidlarbobo.uz/">
+        <meta property="og:url" content="http://shahidlarbobo.uz">
         <meta property="og:site_name" content="Shahidlarbobo.uz">
     <meta property="og:image" content="{{asset('/shahidbobo.jpg')}}" />
     <meta name="telegram:group" content="https://t.me/shahidlarbobo" />
@@ -100,7 +97,25 @@
     </nav>
 </section>
 
+<h1 style="font-size: 0px;">Shahidlarbobo jome masjidi</h1>
+<p style="font-size: 0px;">Shahidlarbobo jome masjidi Xorazm viloyati Urganch tumani.</p>
+<li style="font-size: 0px;">
+    namoz vaqtlari
+</li>
+<li style="font-size: 0px;">
+masjid
+</li>
+<li style="font-size: 0px;">
+    shahidbobo uz
+</li>
+<li style="font-size: 0px;">
+    shahidlarbobo uz
+</li>
+<li style="font-size: 0px;">
+    shahidlar bobo masjid uz
+</li>
 
+<h1 style="font-size: 0px;">Shahidlarbobo jome masjidi</h1>
 @yield('content')
 
 
