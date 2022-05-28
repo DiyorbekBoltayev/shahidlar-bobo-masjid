@@ -1,32 +1,43 @@
 @extends('admin.master')
 @section('content')
-    <h1 class="text text-center">Yangilikni yangilash </h1>
-    <div class="container d-flex justify-content-center">
 
-        <form action="{{url('update',$data->id)}}" method="post" class="w-50" enctype="multipart/form-data">
+    <div class="container-fluid page-body-wrapper">
+
+
+    <h1 class="text text-center">Yangilikni tahrirlash </h1>
+    <div class="container ">
+        <form action="{{url('update',$data->id)}}" method="post" enctype="multipart/form-data">
             @csrf
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label ">Yangilik Mavzusi</label>
-                <input type="text" name="mavzu" class="form-control text-black" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->mavzu}}" required >
-            </div>
+            <div class="">
 
-            <div class="form-floating">
-                <label for="floatingTextarea2" name="matn" >Yangilik matni</label>
-                <textarea  name="matn" class="form-control text-black" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px">{{$data->matn}}"</textarea>
-
-            </div>
-            <br>
-                <div class="mb-3">
-
-                    <img style="width: 100px; height: 100px;" src="/newsimage/{{$data->rasm}}" alt="Oldingi rasm">
+                <div class="form-floating mb-3">
+                    <label class="text text-primary" for="floatingInput1"> Mavzusi </label>
+                    <input type="text" name="mavzu" class="form-control" id="floatingInput1" value="{{$data->mavzu}}" required placeholder="Yangilik mavzusi...">
                 </div>
-                <div class="mb-3">
+
+                <div class="form-floating mb-3" >
+                    <label class="text text-primary" for="floatingInput1"> Matni</label>
+                    <textarea name="matn" class="form-control text-black" id="floatingInput1" rows="10" cols="50" placeholder="Yangilik matni.." >{{$data->matn}}</textarea>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-6 col-sm-12 "><img src="/newsimage/{{$data->rasm}}" style="width: 100%; height: 100%;" alt=""></div>
+                </div>
+
+                <div class="form-floating mb-3" >
                     <label for="exampleInputPassword1" class="form-label">Rasmni tanlang</label>
-                    <input type="file" name="rasm" class="form-control text-black" id="exampleInputPassword1">
+                    <input type="file" name="rasm" class="form-control  text-black">
                 </div>
-                <button type="submit" class="btn btn-primary">Yangilash</button>
+
+                <div class="form-floating mb-3" >
+
+                    <button class="btn btn-primary  form-control" type="submit" name="submit" > Saqlash </button>
+
+                </div>
+            </div>
         </form>
     </div>
+    </div>
+
 
 
 @endsection

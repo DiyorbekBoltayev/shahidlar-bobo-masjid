@@ -75,8 +75,6 @@ Route::get('/gallery',function (){
 });
 
 
-
-
 //////////////////////////////////////
 Route::get('/addbook',[KitobController::class,'index'])->middleware('auth');
 Route::post('/sendbooks',[KitobController::class,'create'])->middleware('auth');

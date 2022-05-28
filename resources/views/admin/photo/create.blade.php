@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('content')
 
-    <div class="container" style="background: #ebedf2">
+    <div class="container" >
         <h1 class="text-primary text text-center">Rasm qo'shish</h1>
         <div class="w-100">
             <form action="{{url('photostore')}}" method="post" enctype="multipart/form-data">
@@ -25,9 +25,6 @@
 
 
                 </div>
-
-
-
 
             </form>
 

@@ -42,9 +42,6 @@ class VideoController extends Controller
         $data->name = $request->name;
 
         $url = $request->url;
-        $youtube = "https://www.youtube.com/embed/";
-
-        $url = $request->url;
         $ss="";
         $youtube = "https://www.youtube.com/embed/";
         for ( $i = strlen($url)-1; $i>0; $i-- ){

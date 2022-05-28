@@ -35,7 +35,7 @@ class FayzullaController extends Controller
         $request->rasm->move('newsimage',$imagename);
         $data->rasm=$imagename;
         $data->save();
-        return redirect(route('addnews'));
+        return redirect(route('shownews'));
 //        return view('admin.yangiliklar.addnews');
     }
 

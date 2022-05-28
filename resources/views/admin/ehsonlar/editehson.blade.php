@@ -3,15 +3,14 @@
     <div class="container" style="">
         <h1 class="text-primary text text-center">Ehsonni tahrirlash</h1>
         <div class="w-100">
+
+
             <form action="{{route('editsave',$data->id)}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-floating mb-3">
                     <label class="text text-primary" for="floatingInput1">Ehson haqida qisqacha ma'lumot kiriting</label>
                     <input type="text" name="title" value="{{$data->title}}" class="form-control" id="floatingInput1" required placeholder="Kiriting...">
                 </div>
-
-
-
 
                 <div class="form-floating">
                     <label class="text-primary" for="floatingTextarea2">Ehson haqida batafsil ma'lumot kiriting</label>

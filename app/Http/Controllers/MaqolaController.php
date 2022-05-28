@@ -51,7 +51,7 @@ class MaqolaController extends Controller
     $data->rasm = $rasmname;
     $data->save();
 
-    return redirect()->back()->with('xabar','Malumot muoffaqiyatli qo`shildi!..');
+    return redirect(route('maqolalar'));
 
     }
 
@@ -84,7 +84,7 @@ class MaqolaController extends Controller
             $data->rasm=$rasmname;
         }
         $data->save();
-        return redirect(route('maqolalar'))->with('xabar','Malumot muoffaqiyatli yangilandi!..');
+        return redirect(route('maqolalar'));
 
     }
 
@@ -95,7 +95,7 @@ class MaqolaController extends Controller
         $data->delete();
 
         $data = Maqola::all();
-        return view('admin.maqolalar.editmaqola', compact('data'))->with('xabar','Malumot muoffaqiyatli yangilandi!..');
+        return view('admin.maqolalar.editmaqola', compact('data'));
 
     }
 }

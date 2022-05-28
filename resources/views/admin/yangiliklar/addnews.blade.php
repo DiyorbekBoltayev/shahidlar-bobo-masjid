@@ -3,7 +3,7 @@
 
 <div class="container-fluid page-body-wrapper">
 
-    <div class="container"  style="background: #ebedf2" >
+    <div class="container"  style="" >
 
         @if(session()->has('xabar'))
 
@@ -23,14 +23,13 @@
             <div class="w-100">
 
                 <div class="form-floating mb-3">
-                    <label class="text text-primary" for="floatingInput1">Mavzusi </label>
+                    <label class="text text-primary" for="floatingInput1"> Mavzusi </label>
                     <input type="text" name="mavzu" class="form-control" id="floatingInput1" required placeholder="Yangilik mavzusi...">
                 </div>
 
             <div class="form-floating mb-3" >
-                <label class="text text-primary" for="floatingInput1">Matni </label>
-                <textarea name="matn" class="form-control text-black" id="floatingInput1" placeholder="Yangilik matni.." ></textarea>
-
+                <label class="text text-primary" for="floatingInput1"> Matni</label>
+                <textarea name="matn" class="form-control text-black" id="floatingInput1" rows="10" cols="50" placeholder="Yangilik matni.." ></textarea>
             </div>
 
 
