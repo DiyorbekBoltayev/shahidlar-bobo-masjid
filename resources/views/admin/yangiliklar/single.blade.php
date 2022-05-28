@@ -24,13 +24,13 @@
             <div class="col-12 col-lg-6">
                 <div class="image-wrapper">
                     <img src="/newsimage/{{$data->rasm}}" alt="Mobirise">
-                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">
-                        Rasmni vohti chiqodi</p>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <section class="content5 cid-t2Um0CTqjG" id="content5-2c">
 
@@ -38,10 +38,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
 
-                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
-                    {{$data->mavzu}}
-                </h4>
-                <p class="mbr-text mbr-fonts-style display-7">
+                <p class="mbr-text mbr-fonts-style display-7 align-center">
                 {{$data->matn}}
                      </div>
         </div>
