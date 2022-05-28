@@ -44,7 +44,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo"><a href="/">
-                        <img src="{{asset('/assets/images/mbr-107x107.png')}}" alt="Mobirise" style="height: 5.9rem;">
+                        <img style="width: 100px; height: 100px" src="{{asset('masjidicon.png')}}" alt="Mobirise" style="height: 5.9rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="{{url('/')}}">Shahidlar bobo</a></span>
