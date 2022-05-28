@@ -57,7 +57,7 @@ Route::get('/shownews',[FayzullaController::class,'store'])->name('shownews')->m
 Route::get('/edit/{id}',[FayzullaController::class,'show'])->middleware('auth');
 Route::post('/update/{id}',[FayzullaController::class,'update'])->middleware('auth');
 Route::get('/delete/{id}',[FayzullaController::class,'destroy'])->middleware('auth');
-Route::get('/yangiliksingle/{id}',[FayzullaController::class,'single'])->middleware('auth');
+Route::get('/yangiliksingle/{id}',[FayzullaController::class,'single']);
 
 
 //////////////////////////////////////////////////////////
