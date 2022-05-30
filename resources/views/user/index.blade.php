@@ -117,7 +117,7 @@
                                     <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>{{$da->mavzu}}</strong></h6>
                                     <p class="mbr-text mbr-fonts-style mt-3 display-7">     {{ substr($da->matn, 0,80) }}...</p>
                                 </div>
-                                <div class="mbr-section-btn item-footer mt-2"><a href="{{url('yangiliksingle',$da->id)}}" class="btn item-btn btn-primary-outline display-7" target="_blank">Batafsil&gt;</a></div>
+                                <div class="mbr-section-btn item-footer mt-2"><a href="{{url('yangiliksingle',$da->id)}}" class="btn item-btn btn-primary-outline display-7" >Batafsil</a></div>
                             </div>
                         </div>
                     @if($t==3) @break @endif
