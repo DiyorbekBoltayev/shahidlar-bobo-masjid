@@ -3,7 +3,7 @@
 
     <h1 class="text text-center">Kitobni yangilash </h1>
     <div class="container ">
-        <form action="{{url('sendbooks')}}" method="post" enctype="multipart/form-data">
+        <form action="{{url('/updatebook',$data->id)}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="w-100">
 

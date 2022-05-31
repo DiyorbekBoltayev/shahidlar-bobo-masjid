@@ -24,7 +24,7 @@
                             </div>
                             <div class="item-content">
                                 <h5 class="item-title mbr-fonts-style display-7">
-                                    <strong>{{$dat->nomi}}</strong>
+                                    <strong>  {{substr($dat->nomi, 0, 25 )}} </strong>
                                 </h5>
                                 <p class="mbr-text mbr-fonts-style mt-3 display-7">
                                     {{$dat->avtor}}
