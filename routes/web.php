@@ -82,7 +82,7 @@ Route::get('/showbook',[KitobController::class,'store'])->name('showbook')->midd
 Route::get('/editbook/{id}',[KitobController::class,'show'])->middleware('auth');
 Route::get('/deletebook/{id}',[KitobController::class,'destroy'])->middleware('auth');
 Route::post('/updatebook{id}',[KitobController::class,'update'])->name('updatebook')->middleware('auth');
-Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla')->middleware('auth');
+Route::get('/download/{id}',[KitobController::class,'getDownload'])->name('yukla');
 
 
 
