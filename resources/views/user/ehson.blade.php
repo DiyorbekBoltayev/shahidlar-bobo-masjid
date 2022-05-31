@@ -48,7 +48,8 @@
                             <div class="row">
                                 <div class="col-md">
                                     <h6 class="card-title mbr-fonts-style display-5">
-                                        <strong>{{$d->title}}</strong>
+                                        <h1>{{$d->title}}</h1>
+
                                     </h6>
                                     <p class="mbr-text mbr-fonts-style display-15">
                                         {{substr($d->text,0,300)}}...

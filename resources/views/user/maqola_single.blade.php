@@ -41,8 +41,9 @@
                 <div class="card-wrapper">
                     <div class="card-box align-left">
                         <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
-                            <strong>{{$data->mavzu}}</strong></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">{{$data->matn}}</p>
+{{--                            <strong class="">{{$data->mavzu}}</strong>--}}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7 align-center">{{$data->matn}}</p>
 
                     </div>
                 </div>

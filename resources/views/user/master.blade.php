@@ -125,8 +125,8 @@ masjid
         <div class="row mbr-white">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media-wrap">
-                    <a href="#">
-                        <img src="{{asset('/shahidbobo.jpg')}}" alt="Logo">
+                    <a href="/">
+                        <img src="{{asset('/sss.png')}}" alt="Logo">
                     </a>
                 </div>
             </div>

@@ -72,7 +72,7 @@
                     <div class="col-12 col-lg-6">
 
                         <div class="image-wrapper">
-                            <img style="width: 400px; height: 500px;" src="/maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
+                            <img style="width: 400px; height: 400px;" src="/maqola_rasm/{{$dat->rasm}}" alt="Mobirise">
                         </div>
 
                     </div>
@@ -83,9 +83,13 @@
                                 <strong>{{ $dat->mavzu }}</strong></h3>
                             <p class="mbr-text mbr-fonts-style display-7">
                             {{substr($dat->matn, 0, 400 )}}
+                            <div class="mbr-section-btn"><a href="{{url('maqolasingle',$dat->id)}}" class="btn btn-primary display-4">Ko`rish</a></div>
+
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
 
