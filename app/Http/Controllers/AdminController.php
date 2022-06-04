@@ -17,6 +17,7 @@ class AdminController extends Controller
 
 public function  addnamoz(Request $request){
         $data=new Namoz();
+        $data->Tong=$request->tong;
         $data->Bamdod=$request->bamdod;
         $data->Quyosh=$request->quyosh;
         $data->Peshin=$request->peshin;
@@ -41,6 +42,7 @@ public function editnamoz($id){
 
 public  function  updatenamoz(Request $request,$id){
     $data = Namoz::find($id);
+    $data->Tong=$request->tong;
     $data->Bamdod=$request->bamdod;
     $data->Quyosh=$request->quyosh;
     $data->Peshin=$request->peshin;

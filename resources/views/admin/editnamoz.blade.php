@@ -9,6 +9,11 @@
                 <h1 class="title"> Namoz vaqtlari qo'shish</h1>
 
                 <div class="div" style="padding: 20px;">
+                    <label> Tong </label>
+                    <input class="form-control w-50 text-black"  type="text" name="tong" value="{{$data->Tong}}" required="">
+                </div>
+
+                <div class="div" style="padding: 20px;">
                     <label> Bamdod </label>
                     <input class="form-control w-50 text-black"  type="text" name="bamdod" value="{{$data->Bamdod}}" required="">
                 </div>

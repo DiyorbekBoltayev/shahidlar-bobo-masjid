@@ -15,6 +15,7 @@
         <table class="table table-bordered border-primary ">
             <tr>
 
+                <th id="th">Tong</th>
                 <th id="th">Bomdod</th>
                 <th id="th">Quyosh</th>
                 <th id="th">Peshin</th>
@@ -28,6 +29,7 @@
 @foreach($data as $da)
                 <tr>
 
+                    <td id="td">{{$da->Tong}}</td>
                     <td id="td">{{$da->Bamdod}}</td>
                     <td id="td">{{$da->Quyosh}}</td>
                     <td id="td">{{$da->Peshin}}</td>
@@ -36,6 +38,7 @@
                     <td id="td">{{$da->Xufton}}</td>
 
                     <td>
+
                         <a href="{{url('editnamoz',$da->id)}}"> <button class="btn btn-primary">Tahrirlash</button></a>
 
 

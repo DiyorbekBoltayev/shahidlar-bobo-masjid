@@ -9,6 +9,11 @@
         <h1 class="title"> Namoz vaqtlari qo'shish</h1>
 
         <div class="div" style="padding: 20px;">
+            <label> Tong </label>
+            <input class="form-control w-50 text-black"  type="text" name="tong" placeholder=" Tong " required="">
+        </div>
+
+        <div class="div" style="padding: 20px;">
             <label> Bomdod </label>
             <input class="form-control w-50 text-black"  type="text" name="bamdod" placeholder=" Bamdod " required="">
         </div>

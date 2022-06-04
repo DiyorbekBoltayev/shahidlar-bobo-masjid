@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('namozs', function (Blueprint $table) {
             $table->id();
+            $table->string('Tong');
             $table->string('Bamdod');
             $table->string('Quyosh');
             $table->string('Peshin');

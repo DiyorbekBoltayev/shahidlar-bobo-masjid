@@ -16,6 +16,7 @@ class Timeseeder extends Seeder
     public function run()
     {
         DB::table('namozs')->insert([
+            'Tong'=>'03:00',
             'Bamdod' => '03:59',
             'Quyosh' => '05:37',
             'Peshin' => '12:53',
