@@ -29,6 +29,11 @@
                             <th><?php echo date("d, M, Y") ?></th>
                         </tr>
 
+                        <tr>
+                            <th>Tong</th>
+                            <th> {{$d->Tong}} </th>
+                        </tr>
+
 
                         <tr>
                             <th>Bomdod</th>
