@@ -7,6 +7,7 @@ use App\Http\Controllers\MaqolaController;
 use App\Http\Controllers\EhsonController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\FayzullaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +28,7 @@ Route::get('/editnamoz/{id}',[AdminController::class,'editnamoz'])->middleware('
 Route::post('/updatenamoz/{id}',[AdminController::class,'updatenamoz'])->middleware('auth');
 
 
-//////////////////////////////////////////////////////////
+/////////////
 Route::get('/',[HomeController::class, 'index'])->name('index');
 Route::get('/ehson',[HomeController::class, 'ehson']);
 Route::get('/yangiliklar',[HomeController::class, 'yangiliklar']);
@@ -37,7 +38,7 @@ Route::get('/adm',[HomeController::class,'adminmi'])->name('adminmi');
 Route::post('/adm',[HomeController::class,'adminakanmi'])->name('adminakanmi');
 
 
-//////////////////////////////////////////////////////////
+//////////////////////////
 Route::get('/maqolalar',[MaqolaController::class, 'index'])->name('maqolalar')->middleware('auth');
 Route::get('/maqola',[MaqolaController::class, 'indexuser'])->name('maqola');
 Route::get('/maqolasingle/{id}',[MaqolaController::class, 'single'])->name('maqolasingle');
@@ -60,7 +61,7 @@ Route::get('/delete/{id}',[FayzullaController::class,'destroy'])->middleware('au
 Route::get('/yangiliksingle/{id}',[FayzullaController::class,'single']);
 
 
-//////////////////////////////////////////////////////////
+///////////////////
 Route::get('/ehsonlar',[EhsonController::class,'ehsonlar'])->name('ehsonlar')->middleware('auth');
 Route::get('/addehson',[EhsonController::class,'addehson'])->name('addehson')->middleware('auth');
 Route::post('/storeehson',[EhsonController::class,'storeehson'])->name('storeehson')->middleware('auth');
